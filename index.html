@@ -342,8 +342,8 @@ body.chrome-hidden .chrome-toggle {
   top: 14px;
 }
 @media (max-width: 820px) {
-  .chrome-toggle { top: auto; bottom: 18px; left: 12px; right: 12px; transform: none; width: auto; text-align: center; }
-  body.chrome-hidden .chrome-toggle { bottom: 18px; }
+  .chrome-toggle { top: auto; bottom: 18px; left: auto; right: 12px; transform: none; width: auto; text-align: center; }
+  body.chrome-hidden .chrome-toggle { bottom: 18px; left: auto; right: 12px; width: auto; writing-mode: horizontal-tb; }
   /* when mobile bar present, tuck hide next to it conceptually via bottom */
   body:not(.chrome-hidden) .chrome-toggle { bottom: 18px; top: auto; left: auto; right: 12px; width: auto; padding: 12px 14px; }
 }
@@ -428,6 +428,41 @@ body.chrome-hidden .chrome-toggle { margin-top: 0; right: 12px; left: auto; tran
   .filters label.grow { grid-column: 1 / -1; }
   .brand h1 { font-size: 20px; }
   .legend-inline { gap: 6px 8px; }
+}
+
+
+/* chrome-toggle mobile harden */
+@media (max-width: 820px) {
+  .chrome-toggle,
+  body.chrome-hidden .chrome-toggle,
+  body:not(.chrome-hidden) .chrome-toggle {
+    position: absolute;
+    top: auto !important;
+    bottom: 16px !important;
+    left: auto !important;
+    right: 12px !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: 46vw;
+    margin: 0 !important;
+    padding: 10px 14px !important;
+    white-space: nowrap;
+    writing-mode: horizontal-tb !important;
+    z-index: 1400;
+  }
+  body.table-open .chrome-toggle { bottom: calc(48vh + 12px) !important; }
+  body.table-only .chrome-toggle { display: none !important; }
+}
+@media (min-width: 821px) {
+  .chrome-toggle {
+    top: 12px;
+    right: 12px;
+    left: auto;
+    transform: none;
+    margin-top: 44px; /* under basemap */
+  }
+  /* when table open, tuck hide control under basemap still — avoid overlapping Close */
+  body.table-open .chrome-toggle { right: auto; left: 12px; margin-top: 0; top: auto; bottom: 16px; }
 }
 
 </style>
@@ -975,10 +1010,15 @@ function render() {
     btn.title = hidden ? 'Show filters and table' : 'Hide filters and table';
     btn.setAttribute('aria-pressed', hidden ? 'true' : 'false');
   };
+  let chromeRestore = { table: false, tableOnly: false };
   btn.addEventListener('click', () => {
     const willHide = !document.body.classList.contains('chrome-hidden');
     if (willHide) {
-      // close table / filters drawers so state is clean when restored
+      const panel = document.getElementById('tablePanel');
+      chromeRestore = {
+        table: !!(panel && panel.classList.contains('open')) || document.body.classList.contains('table-open'),
+        tableOnly: document.body.classList.contains('table-only'),
+      };
       try { setTableOnly(false); } catch (e) {}
       try { showTablePanel(false); } catch (e) {}
       document.body.classList.remove('filters-open', 'table-open', 'table-only');
@@ -988,6 +1028,20 @@ function render() {
       if (filtersBtn) { filtersBtn.classList.remove('active'); filtersBtn.textContent = 'Filters'; }
       const tableBtn = document.getElementById('mobileTableBtn');
       if (tableBtn) { tableBtn.classList.remove('active'); tableBtn.textContent = 'Table'; }
+    } else {
+      // restore ranked table if it was open before hide
+      if (chromeRestore.table) {
+        try { showTablePanel(true); } catch (e) {}
+      }
+      if (chromeRestore.tableOnly) {
+        try { setTableOnly(true); } catch (e) {}
+      }
+      const tableBtn = document.getElementById('mobileTableBtn');
+      if (tableBtn) {
+        const on = chromeRestore.table || chromeRestore.tableOnly;
+        tableBtn.classList.toggle('active', on);
+        tableBtn.textContent = on ? 'Map' : 'Table';
+      }
     }
     document.body.classList.toggle('chrome-hidden', willHide);
     sync();
