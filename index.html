@@ -547,6 +547,7 @@ body.chrome-hidden .chrome-toggle { margin-top: 0; right: 12px; left: auto; tran
         <tr>
           <th>Course</th>
           <th>City</th>
+          <th>State</th>
           <th>Access</th>
           <th>Lists</th>
         </tr>
@@ -864,7 +865,8 @@ function renderTable(filtered) {
       : `<div class="name">${courseInner}</div>`;
     return `<tr data-idx="${idx}">
       <td>${courseCell}</td>
-      <td class="muted">${escapeHtml(c.city || c.state || '')}</td>
+      <td class="muted">${escapeHtml(c.city || '')}</td>
+      <td class="muted">${escapeHtml(c.state || c.code || '')}</td>
       <td class="muted">${escapeHtml(c.access || '')}</td>
       <td>${listPills(c)}</td>
     </tr>`;
