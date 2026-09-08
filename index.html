@@ -310,10 +310,50 @@ body.table-only { background: #0b1210; }
   body.filters-open .ui.top-left { display: flex; }
 }
 
+
+/* ---- Chrome hide (map-only) ---- */
+.chrome-toggle {
+  position: absolute; z-index: 1300;
+  top: 18px; left: 50%; transform: translateX(-50%);
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--cream);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-family: inherit;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chrome-toggle:hover { border-color: var(--gold); color: var(--gold); }
+body.chrome-hidden .ui.top-left,
+body.chrome-hidden .ui.bottom-left,
+body.chrome-hidden .ui.bottom-right,
+body.chrome-hidden .ui.top-right,
+body.chrome-hidden #tablePanel,
+body.chrome-hidden .mobile-bar,
+body.chrome-hidden .vignette {
+  display: none !important;
+}
+body.chrome-hidden .chrome-toggle {
+  top: 14px;
+}
+@media (max-width: 820px) {
+  .chrome-toggle { top: auto; bottom: 18px; left: 12px; right: 12px; transform: none; width: auto; text-align: center; }
+  body.chrome-hidden .chrome-toggle { bottom: 18px; }
+  /* when mobile bar present, tuck hide next to it conceptually via bottom */
+  body:not(.chrome-hidden) .chrome-toggle { bottom: 18px; top: auto; left: auto; right: 12px; width: auto; padding: 12px 14px; }
+}
+
 </style>
 </head>
 <body>
 <div id="map"></div>
+<button type="button" class="chrome-toggle" id="chromeToggle" title="Hide filters and table">Hide panels</button>
+
 
 <div class="mobile-bar" id="mobileBar">
   <button type="button" class="mbtn" id="mobileFiltersBtn">Filters</button>
@@ -823,6 +863,45 @@ function render() {
 
 }
 ['q','state','access','minLists'].forEach(id => document.getElementById(id).addEventListener('input', render));
+
+
+// Hide all filter/table chrome for a clean map
+(function setupChromeToggle() {
+  const btn = document.getElementById('chromeToggle');
+  if (!btn) return;
+  const sync = () => {
+    const hidden = document.body.classList.contains('chrome-hidden');
+    btn.textContent = hidden ? 'Show panels' : 'Hide panels';
+    btn.title = hidden ? 'Show filters and table' : 'Hide filters and table';
+    btn.setAttribute('aria-pressed', hidden ? 'true' : 'false');
+  };
+  btn.addEventListener('click', () => {
+    const willHide = !document.body.classList.contains('chrome-hidden');
+    if (willHide) {
+      // close table / filters drawers so state is clean when restored
+      try { setTableOnly(false); } catch (e) {}
+      try { showTablePanel(false); } catch (e) {}
+      document.body.classList.remove('filters-open', 'table-open', 'table-only');
+      const topLeft = document.querySelector('.ui.top-left');
+      if (topLeft) topLeft.classList.remove('mobile-open');
+      const filtersBtn = document.getElementById('mobileFiltersBtn');
+      if (filtersBtn) { filtersBtn.classList.remove('active'); filtersBtn.textContent = 'Filters'; }
+      const tableBtn = document.getElementById('mobileTableBtn');
+      if (tableBtn) { tableBtn.classList.remove('active'); tableBtn.textContent = 'Table'; }
+    }
+    document.body.classList.toggle('chrome-hidden', willHide);
+    sync();
+    try { map.invalidateSize(); } catch (e) {}
+  });
+  // keyboard: H toggles when not typing in an input
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'h' && e.key !== 'H') return;
+    const t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    btn.click();
+  });
+  sync();
+})();
 
 // Mobile chrome
 (function setupMobileChrome() {
