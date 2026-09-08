@@ -986,9 +986,21 @@ function render() {
     shown++;
     if (c.top100_usa) stars++;
   }
+  // Contextual stats — avoid "124 Shown / 124 Top 100" when ★ filter is on
+  const statesShown = new Set(filtered.map(c => c.code || c.state).filter(Boolean)).size;
+  let secondStat;
+  if (top100Only && requiredLists.size === 0 && regionalFilters.length === 0) {
+    secondStat = `<div class="stat"><b>${statesShown.toLocaleString()}</b><span>States</span></div>`;
+  } else if (regionalFilters.length) {
+    secondStat = `<div class="stat"><b>${stars.toLocaleString()}</b><span>Also ★100</span></div>`;
+  } else if (requiredLists.size) {
+    secondStat = `<div class="stat"><b>${stars.toLocaleString()}</b><span>Also ★100</span></div>`;
+  } else {
+    secondStat = `<div class="stat"><b>${TOP100_N.toLocaleString()}</b><span>Top 100</span></div>`;
+  }
   document.getElementById('stats').innerHTML = `
     <div class="stat"><b>${shown.toLocaleString()}</b><span>Shown</span></div>
-    <div class="stat"><b>${stars.toLocaleString()}</b><span>Top 100</span></div>
+    ${secondStat}
     <div class="stat"><b>${COURSES.length.toLocaleString()}</b><span>Mapped</span></div>
     <div class="stat"><b>${TOTAL.toLocaleString()}</b><span>In DB</span></div>`;
   document.getElementById('note').textContent =
