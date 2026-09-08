@@ -121,6 +121,23 @@ a:hover { text-decoration: underline; }
   .brand h1 { font-size:28px; }
   .rank-table .loc { white-space: normal; }
 }
+
+.jump {
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin: 0 0 18px;
+}
+.jump .btn {
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+.jump .btn:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
+#gd-section, #golf-section { scroll-margin-top: 18px; }
+
 </style>
 </head>
 <body>
@@ -128,7 +145,7 @@ a:hover { text-decoration: underline; }
     <div class="topbar">
       <div class="brand">
         <h1>Top 100 <span>History</span></h1>
-        <p>Archived biennial rankings from Golf Digest and GOLF Magazine. The live map still shows current editions only — this page is research / comparison.</p>
+        <p>Two different publications: Golf Digest America’s 100 Greatest (GD100) and GOLF Magazine Top 100 Courses in the U.S. (GOLF100). The live map still shows current editions only — this page is research / comparison.</p>
       </div>
       <div class="nav-links">
         <a class="btn primary" href="index.html">← Back to map</a>
@@ -151,8 +168,13 @@ a:hover { text-decoration: underline; }
       </p>
     </div>
 
+
+    <div class="jump" role="navigation" aria-label="Lists">
+      <a class="btn" href="#gd-section">Golf Digest (GD100)</a>
+      <a class="btn" href="#golf-section">GOLF Magazine (GOLF100)</a>
+    </div>
     <div class="panel">
-      <h2>Golf Digest · America's 100 Greatest</h2>
+      <h2 id="gd-section">Golf Digest · America's 100 Greatest</h2>
       <p class="lead">Biennial editions. Map currently uses <strong>2025-26</strong>.</p>
       <div class="chips" id="gd-chips"><button class="chip" data-target="gd-2025-26" type="button">2025-26 <span>100</span></button><button class="chip" data-target="gd-2023-24" type="button">2023-24 <span>100</span></button><button class="chip" data-target="gd-2021-22" type="button">2021-22 <span>100</span></button><button class="chip" data-target="gd-2019-20" type="button">2019-20 <span>100</span></button><button class="chip" data-target="gd-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="gd-2015-16" type="button">2015-16 <span>100</span></button></div>
       
@@ -813,7 +835,7 @@ a:hover { text-decoration: underline; }
     </div>
 
     <div class="panel">
-      <h2>GOLF Magazine · Top 100 Courses in the U.S.</h2>
+      <h2 id="golf-section">GOLF Magazine · Top 100 Courses in the U.S.</h2>
       <p class="lead">Biennial editions (label years vary). Map currently uses <strong>2024-25</strong>.</p>
       <div class="chips" id="golf-chips"><button class="chip" data-target="golf-2024-25" type="button">2024-25 <span>100</span></button><button class="chip" data-target="golf-2022-23" type="button">2022-23 <span>100</span></button><button class="chip" data-target="golf-2020-21" type="button">2020-21 <span>100</span></button><button class="chip" data-target="golf-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="golf-2015-16" type="button">2015-16 <span>100</span></button></div>
       
