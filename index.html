@@ -681,9 +681,19 @@ const accessSel = document.getElementById('access');
 [...new Set(COURSES.map(c => c.code))].sort().forEach(s => {
   const o=document.createElement('option'); o.value=s; o.textContent=s; stateSel.appendChild(o);
 });
-[...new Set(COURSES.map(c => c.access))].sort().forEach(s => {
+['Public','Private','Resort','Semi-Private','Unknown'].forEach(s => {
   const o=document.createElement('option'); o.value=s; o.textContent=s; accessSel.appendChild(o);
 });
+function accessMatches(raw, filter) {
+  if (!filter) return true;
+  const s = String(raw || '').toLowerCase();
+  if (filter === 'Unknown') return !s || s === 'unknown';
+  if (filter === 'Semi-Private') return s.includes('semi');
+  if (filter === 'Public') return /public|municipal/.test(s);
+  if (filter === 'Private') return s.includes('private') || s.includes('military');
+  if (filter === 'Resort') return s.includes('resort');
+  return s === filter.toLowerCase();
+}
 
 let requiredLists = new Set();
 let top100Only = true;
@@ -958,7 +968,7 @@ function render() {
   const filtered = [];
   for (const c of COURSES) {
     if (st && c.code !== st) continue;
-    if (ac && c.access !== ac) continue;
+    if (ac && !accessMatches(c.access, ac)) continue;
     if ((c.list_count||0) < minLists) continue;
     // Regional chips (OR): state_code + rank<=depth
     if (regionalFilters.length) {
