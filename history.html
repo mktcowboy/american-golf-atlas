@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Top 100 History · American Golf Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg: #0b1210;
+  --panel: rgba(12, 20, 17, 0.92);
+  --panel-border: rgba(232, 213, 160, 0.22);
+  --cream: #f6f1e4;
+  --muted: rgba(246,241,228,0.62);
+  --gold: #e6c36a;
+  --gold-deep: #b8892d;
+  --sage: #3d7a58;
+  --sage-bright: #5ea87a;
+  --shadow: 0 18px 50px rgba(0,0,0,.45);
+  --radius: 18px;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin:0; min-height:100%;
+  background:
+    radial-gradient(ellipse at top left, rgba(61,122,88,.18), transparent 45%),
+    radial-gradient(ellipse at bottom right, rgba(184,137,45,.12), transparent 40%),
+    var(--bg);
+  color: var(--cream);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
+.topbar {
+  display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between;
+  margin-bottom: 28px;
+}
+.brand h1 {
+  margin:0; font-family:"Instrument Serif", Georgia, serif; font-weight:400; font-size:34px; letter-spacing:-0.02em;
+}
+.brand h1 span { color: var(--gold); font-style: italic; }
+.brand p { margin:8px 0 0; color:var(--muted); font-size:13.5px; line-height:1.45; max-width:52ch; }
+.nav-links { display:flex; gap:10px; flex-wrap:wrap; }
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 16px; border-radius:999px;
+  border:1px solid var(--panel-border);
+  background: var(--panel); color: var(--cream);
+  box-shadow: var(--shadow); font-size:13px;
+}
+.btn.primary {
+  background: linear-gradient(135deg, #8a6a12, #c49a46);
+  border-color: var(--gold); color:#fff8e6; font-weight:600;
+}
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-bottom: 18px;
+}
+.panel h2 {
+  margin:0 0 8px; font-family:"Instrument Serif", Georgia, serif; font-weight:400; font-size:26px;
+}
+.panel .lead { margin:0 0 16px; color:var(--muted); font-size:13.5px; line-height:1.5; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 8px; }
+.chip {
+  border:1px solid var(--panel-border);
+  background: rgba(255,255,255,0.04);
+  color: var(--cream);
+  border-radius:999px; padding:8px 14px; cursor:pointer;
+  font-size:13px; font-family: inherit;
+}
+.chip span {
+  margin-left:6px; color:var(--muted); font-size:11px;
+}
+.chip:hover { border-color: rgba(230,195,106,0.5); }
+.chip.active {
+  background: linear-gradient(135deg, #8a6a12, #c49a46);
+  border-color: var(--gold); color:#fff8e6;
+}
+.chip.active span { color: rgba(255,248,230,.8); }
+.edition-meta h3 {
+  margin:18px 0 6px; font-size:18px; font-weight:600;
+}
+.edition-meta p { margin:0 0 14px; color:var(--muted); font-size:12.5px; }
+.rank-table {
+  width:100%; border-collapse: collapse; font-size:13.5px;
+}
+.rank-table th {
+  text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+  color:var(--muted); padding:10px 8px; border-bottom:1px solid var(--panel-border);
+}
+.rank-table td {
+  padding:9px 8px; border-bottom:1px solid rgba(232,213,160,0.08);
+  vertical-align: top;
+}
+.rank-table tr:hover td { background: rgba(230,195,106,0.05); }
+.rank-table .rank {
+  width:48px; color: var(--gold); font-weight:600; font-variant-numeric: tabular-nums;
+}
+.rank-table .loc { color: var(--muted); white-space: nowrap; }
+.stats {
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap:10px; margin: 14px 0 4px;
+}
+.stat {
+  background: rgba(255,255,255,0.03); border:1px solid var(--panel-border);
+  border-radius: 14px; padding:12px 14px;
+}
+.stat b { display:block; color:var(--gold); font-size:22px; font-weight:600; }
+.stat span { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
+.foot {
+  margin-top: 28px; color: var(--muted); font-size:12px; line-height:1.5;
+}
+.downloads a { margin-right: 14px; }
+@media (max-width: 720px) {
+  .brand h1 { font-size:28px; }
+  .rank-table .loc { white-space: normal; }
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <h1>Top 100 <span>History</span></h1>
+        <p>Archived biennial rankings from Golf Digest and GOLF Magazine. The live map still shows current editions only — this page is research / comparison.</p>
+      </div>
+      <div class="nav-links">
+        <a class="btn primary" href="index.html">← Back to map</a>
+        <a class="btn" href="data/history/index.json">Catalog JSON</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Catalog</h2>
+      <p class="lead">Free public sources only (official story pages when available, Planet Golf archives otherwise). HTML caches live under <code>data/history/cache/</code>.</p>
+      <div class="stats">
+        <div class="stat"><b>6</b><span>GD editions</span></div>
+        <div class="stat"><b>5</b><span>GOLF Mag editions</span></div>
+        <div class="stat"><b>600</b><span>GD rows</span></div>
+        <div class="stat"><b>500</b><span>GOLF rows</span></div>
+      </div>
+      <p class="downloads" style="margin-top:14px">
+        <a href="data/history/gd100_all_years.csv">gd100_all_years.csv</a>
+        <a href="data/history/golf100_all_years.csv">golf100_all_years.csv</a>
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>Golf Digest · America's 100 Greatest</h2>
+      <p class="lead">Biennial editions. Map currently uses <strong>2025-26</strong>.</p>
+      <div class="chips" id="gd-chips"><button class="chip" data-target="gd-2025-26" type="button">2025-26 <span>100</span></button><button class="chip" data-target="gd-2023-24" type="button">2023-24 <span>100</span></button><button class="chip" data-target="gd-2021-22" type="button">2021-22 <span>100</span></button><button class="chip" data-target="gd-2019-20" type="button">2019-20 <span>100</span></button><button class="chip" data-target="gd-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="gd-2015-16" type="button">2015-16 <span>100</span></button></div>
+      
+<section class="edition-panel" id="gd-2025-26" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2025-26</h3>
+    <p>100/100 rows · source: <a href="https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking" target="_blank" rel="noopener">official</a>
+    · <a href="data/history/gd100/2025-26.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley Golf Club</td><td class='loc'>Pine Valley, NJ</td></tr>
+<tr><td class='rank'>2</td><td>Augusta National Golf Club</td><td class='loc'>Augusta, GA</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point Club</td><td class='loc'>Pebble Beach, CA</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills Golf Club</td><td class='loc'>Southampton, NY</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont Country Club</td><td class='loc'>Oakmont, PA</td></tr>
+<tr><td class='rank'>6</td><td>Merion Golf Club: East</td><td class='loc'>Ardmore, PA</td></tr>
+<tr><td class='rank'>7</td><td>National Golf Links of America</td><td class='loc'>Southampton, NY</td></tr>
+<tr><td class='rank'>8</td><td>Sand Hills Golf Club</td><td class='loc'>Mullen, NE</td></tr>
+<tr><td class='rank'>9</td><td>Pebble Beach Golf Links</td><td class='loc'>Pebble Beach, CA</td></tr>
+<tr><td class='rank'>10</td><td>Fishers Island Club</td><td class='loc'>Fishers Island, NY</td></tr>
+<tr><td class='rank'>11</td><td>Chicago Golf Club</td><td class='loc'>Wheaton, IL</td></tr>
+<tr><td class='rank'>12</td><td>Seminole Golf Club</td><td class='loc'>Juno Beach, FL</td></tr>
+<tr><td class='rank'>13</td><td>Winged Foot Golf Club: West</td><td class='loc'>Mamaroneck, NY</td></tr>
+<tr><td class='rank'>14</td><td>Friar&#x27;s Head Golf Club</td><td class='loc'>Riverhead, NY</td></tr>
+<tr><td class='rank'>15</td><td>Crystal Downs Country Club</td><td class='loc'>Frankfort, MI</td></tr>
+<tr><td class='rank'>16</td><td>Los Angeles Country Club: North</td><td class='loc'>Los Angeles, CA</td></tr>
+<tr><td class='rank'>17</td><td>The Country Club: The Main Course</td><td class='loc'>Brookline, MA</td></tr>
+<tr><td class='rank'>18</td><td>Riviera Country Club</td><td class='loc'>Pacific Palisades, CA</td></tr>
+<tr><td class='rank'>19</td><td>Muirfield Village Golf Club</td><td class='loc'>Dublin, OH</td></tr>
+<tr><td class='rank'>20</td><td>Oakland Hills Country Club: South Course</td><td class='loc'>Bloomfield Hills, MI</td></tr>
+<tr><td class='rank'>21</td><td>Oak Hill Country Club: East</td><td class='loc'>Rochester, NY</td></tr>
+<tr><td class='rank'>22</td><td>Peachtree Golf Club</td><td class='loc'>Atlanta, GA</td></tr>
+<tr><td class='rank'>23</td><td>Pacific Dunes</td><td class='loc'>Bandon, OR</td></tr>
+<tr><td class='rank'>24</td><td>Shadow Creek</td><td class='loc'>North Las Vegas, NV</td></tr>
+<tr><td class='rank'>25</td><td>Prairie Dunes Country Club</td><td class='loc'>Hutchinson, KS</td></tr>
+<tr><td class='rank'>26</td><td>Whistling Straits: Straits Course</td><td class='loc'>Sheboygan, WI</td></tr>
+<tr><td class='rank'>27</td><td>Wade Hampton Golf Club</td><td class='loc'>Cashiers, NC</td></tr>
+<tr><td class='rank'>28</td><td>Southern Hills Country Club</td><td class='loc'>Tulsa, OK</td></tr>
+<tr><td class='rank'>29</td><td>The Honors Course</td><td class='loc'>Ooltewah, TN</td></tr>
+<tr><td class='rank'>30</td><td>Kiawah Island Golf Resort: The Ocean Course</td><td class='loc'>Kiawah Island, SC</td></tr>
+<tr><td class='rank'>31</td><td>Pikewood National Golf Club</td><td class='loc'>Morgantown, WV</td></tr>
+<tr><td class='rank'>32</td><td>Pinehurst No. 2</td><td class='loc'>Pinehurst, NC</td></tr>
+<tr><td class='rank'>33</td><td>San Francisco Golf Club</td><td class='loc'>San Francisco, CA</td></tr>
+<tr><td class='rank'>34</td><td>Ballyneal Golf Club</td><td class='loc'>Holyoke, CO</td></tr>
+<tr><td class='rank'>35</td><td>The Olympic Club: Lake</td><td class='loc'>San Francisco, CA</td></tr>
+<tr><td class='rank'>36</td><td>Ohoopee Match Club</td><td class='loc'>Cobbtown, GA</td></tr>
+<tr><td class='rank'>37</td><td>The Alotian Club</td><td class='loc'>Roland, AR</td></tr>
+<tr><td class='rank'>38</td><td>Bethpage State Park: Black</td><td class='loc'>Farmingdale, NY</td></tr>
+<tr><td class='rank'>39</td><td>Old Town Club</td><td class='loc'>Winston Salem, NC</td></tr>
+<tr><td class='rank'>40</td><td>Congaree Golf Club</td><td class='loc'>Ridgeland, SC</td></tr>
+<tr><td class='rank'>41</td><td>TPC Sawgrass: Stadium</td><td class='loc'>Ponte Vedra Beach, FL</td></tr>
+<tr><td class='rank'>42</td><td>Baltusrol Golf Club: Lower</td><td class='loc'>Springfield, NJ</td></tr>
+<tr><td class='rank'>43</td><td>Gozzer Ranch Golf and Lake Club</td><td class='loc'>Harrison, ID</td></tr>
+<tr><td class='rank'>44</td><td>Bandon Dunes</td><td class='loc'>Bandon, OR</td></tr>
+<tr><td class='rank'>45</td><td>Winged Foot Golf Club: East</td><td class='loc'>Mamaroneck, NY</td></tr>
+<tr><td class='rank'>46</td><td>The Golf Club</td><td class='loc'>New Albany, OH</td></tr>
+<tr><td class='rank'>47</td><td>Shoreacres</td><td class='loc'>Lake Bluff, IL</td></tr>
+<tr><td class='rank'>48</td><td>Camargo Club</td><td class='loc'>Cincinnati, OH</td></tr>
+<tr><td class='rank'>49</td><td>Erin Hills Golf Course</td><td class='loc'>Hartford, WI</td></tr>
+<tr><td class='rank'>50</td><td>Castle Pines Golf Club</td><td class='loc'>Castle Rock, CO</td></tr>
+<tr><td class='rank'>51</td><td>Sebonack Golf Club</td><td class='loc'>Southampton, NY</td></tr>
+<tr><td class='rank'>52</td><td>Sleepy Hollow Country Club</td><td class='loc'>Scarborough, NY</td></tr>
+<tr><td class='rank'>53</td><td>Maidstone Club</td><td class='loc'>East Hampton, NY</td></tr>
+<tr><td class='rank'>54</td><td>Myopia Hunt Club</td><td class='loc'>South Hamilton, MA</td></tr>
+<tr><td class='rank'>55</td><td>Monterey Peninsula Country Club: Shore</td><td class='loc'>Pebble Beach, CA</td></tr>
+<tr><td class='rank'>56</td><td>Somerset Hills Country Club</td><td class='loc'>Bernardsville, NJ</td></tr>
+<tr><td class='rank'>57</td><td>California Golf Club</td><td class='loc'>South San Francisco, CA</td></tr>
+<tr><td class='rank'>58</td><td>Garden City Golf Club</td><td class='loc'>Garden City, NY</td></tr>
+<tr><td class='rank'>59</td><td>Nanea Golf Club</td><td class='loc'>Kailua Kona, HI</td></tr>
+<tr><td class='rank'>60</td><td>Victoria National Golf Club</td><td class='loc'>Newburgh, IN</td></tr>
+<tr><td class='rank'>61</td><td>Bandon Trails</td><td class='loc'>Bandon, OR</td></tr>
+<tr><td class='rank'>62</td><td>Inverness Club</td><td class='loc'>Toledo, OH</td></tr>
+<tr><td class='rank'>63</td><td>Cherry Hills Country Club</td><td class='loc'>Englewood, CO</td></tr>
+<tr><td class='rank'>64</td><td>Interlachen Country Club</td><td class='loc'>Edina, MN</td></tr>
+<tr><td class='rank'>65</td><td>Rock Creek Cattle Company</td><td class='loc'>Deer Lodge, MT</td></tr>
+<tr><td class='rank'>66</td><td>Whispering Pines Golf Club</td><td class='loc'>Trinity, TX</td></tr>
+<tr><td class='rank'>67</td><td>Congressional Country Club: Blue</td><td class='loc'>Bethesda, MD</td></tr>
+<tr><td class='rank'>68</td><td>Calusa Pines Golf Club</td><td class='loc'>Naples, FL</td></tr>
+<tr><td class='rank'>69</td><td>Sand Valley: The Lido</td><td class='loc'>Nekoosa, WI</td></tr>
+<tr><td class='rank'>70</td><td>The Estancia Club</td><td class='loc'>Scottsdale, AZ</td></tr>
+<tr><td class='rank'>71</td><td>The Valley Club of Montecito</td><td class='loc'>Santa Barbara, CA</td></tr>
+<tr><td class='rank'>72</td><td>CapRock Ranch</td><td class='loc'>Valentine, NE</td></tr>
+<tr><td class='rank'>73</td><td>Old Sandwich Golf Club</td><td class='loc'>Plymouth, MA</td></tr>
+<tr><td class='rank'>74</td><td>Medinah Country Club: No. 3</td><td class='loc'>Medinah, IL</td></tr>
+<tr><td class='rank'>75</td><td>Quaker Ridge Golf Club</td><td class='loc'>Scarsdale, NY</td></tr>
+<tr><td class='rank'>76</td><td>Spyglass Hill Golf Course</td><td class='loc'>Pebble Beach, CA</td></tr>
+<tr><td class='rank'>77</td><td>Monterey Peninsula Country Club: Dunes</td><td class='loc'>Pebble Beach, CA</td></tr>
+<tr><td class='rank'>78</td><td>Essex County Club</td><td class='loc'>Manchester, MA</td></tr>
+<tr><td class='rank'>79</td><td>Kinloch Golf Club</td><td class='loc'>Manakin Sabot, VA</td></tr>
+<tr><td class='rank'>80</td><td>Oak Tree National</td><td class='loc'>Edmond, OK</td></tr>
+<tr><td class='rank'>81</td><td>Old Macdonald</td><td class='loc'>Bandon, OR</td></tr>
+<tr><td class='rank'>82</td><td>Scioto Country Club</td><td class='loc'>Columbus, OH</td></tr>
+<tr><td class='rank'>83</td><td>Ladera Golf Club</td><td class='loc'>Thermal, CA</td></tr>
+<tr><td class='rank'>84</td><td>Baltusrol Golf Club: Upper</td><td class='loc'>Springfield, NJ</td></tr>
+<tr><td class='rank'>85</td><td>The Quarry at La Quinta</td><td class='loc'>La Quinta, CA</td></tr>
+<tr><td class='rank'>86</td><td>Canyata Golf Club</td><td class='loc'>Marshall, IL</td></tr>
+<tr><td class='rank'>87</td><td>Butler National Golf Club</td><td class='loc'>Oak Brook, IL</td></tr>
+<tr><td class='rank'>88</td><td>Hudson National Golf Club</td><td class='loc'>Croton On Hudson, NY</td></tr>
+<tr><td class='rank'>89</td><td>The Kittansett Club</td><td class='loc'>Marion, MA</td></tr>
+<tr><td class='rank'>90</td><td>Plainfield Country Club</td><td class='loc'>Edison, NJ</td></tr>
+<tr><td class='rank'>91</td><td>Boston Golf Club</td><td class='loc'>Hingham, MA</td></tr>
+<tr><td class='rank'>92</td><td>Pete Dye Golf Club</td><td class='loc'>Bridgeport, WV</td></tr>
+<tr><td class='rank'>93</td><td>Pasatiempo Golf Club</td><td class='loc'>Santa Cruz, CA</td></tr>
+<tr><td class='rank'>94</td><td>Valhalla Golf Club</td><td class='loc'>Louisville, KY</td></tr>
+<tr><td class='rank'>95</td><td>Diamond Creek</td><td class='loc'>Banner Elk, NC</td></tr>
+<tr><td class='rank'>96</td><td>Dallas National Golf Club</td><td class='loc'>Dallas, TX</td></tr>
+<tr><td class='rank'>97</td><td>Milwaukee Country Club</td><td class='loc'>River Hills, WI</td></tr>
+<tr><td class='rank'>98</td><td>Piping Rock Club</td><td class='loc'>Locust Valley, NY</td></tr>
+<tr><td class='rank'>99</td><td>Crooked Stick Golf Club</td><td class='loc'>Carmel, IN</td></tr>
+<tr><td class='rank'>100</td><td>Aronimink Golf Club</td><td class='loc'>Newtown Square, PA</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="gd-2023-24" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2023-24</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/gd100/2023-24.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Prairie Club – Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Ohoopee Match Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>The Alotian</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Congaree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Castle Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Whispering Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Victoria National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Old Town Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Rock Creek Cattle Co</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Oak Tree National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>The Estancia Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>The California Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Kinloch – USA</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Butler National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Diamond Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Monterey Peninsula CC – Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Dallas National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Canyata Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Valhalla</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Hudson National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Quarry at La Quinta</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Arcadia Bluffs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Pete Dye GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Shooting Star</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Spring Hill Golf Club</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="gd-2021-22" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2021-22</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/gd100/2021-22.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>The Alotian</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Congaree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Victoria National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Castle Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Butler National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Whispering Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Oak Tree National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Kinloch – USA</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Dallas National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>The Estancia Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Monterey Peninsula CC – Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Rock Creek Cattle Co</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Canyata Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Arcadia Bluffs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Quarry at La Quinta</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Diamond Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Pete Dye GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Hudson National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Rich Harvest Links</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Old Town Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Valhalla</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Double Eagle</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Quail Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Spring Hill Golf Club</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="gd-2019-20" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2019-20</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/gd100/2019-20.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Alotian</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Victoria National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Butler National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Castle Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Whispering Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Oak Tree National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Canyata Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Pete Dye GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Dallas National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Kinloch – USA</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Arcadia Bluffs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>The Estancia Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Quarry at La Quinta</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Monterey Peninsula CC – Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Hudson National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Valhalla</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Diamond Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Club at Black Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Double Eagle</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Spring Hill Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Rich Harvest Links</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>The Preserve</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Old Town Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Crooked Stick</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Mayacama Golf Club</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="gd-2017-18" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2017-18</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/gd100/2017-18.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>The Alotian</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Castle Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Victoria National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Butler National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Kinloch – USA</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Whispering Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Oak Tree National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Dallas National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Pete Dye GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Canyata Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Arcadia Bluffs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Spring Hill Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>The Estancia Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Valhalla</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Quarry at La Quinta</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Club at Black Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Hudson National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Double Eagle</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Rich Harvest Links</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Diamond Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>The Preserve</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Crooked Stick</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Laurel Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Flint Hills National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Sahalee – South/North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Mayacama Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Eagle Point</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="gd-2015-16" hidden>
+  <div class="edition-meta">
+    <h3>Golf Digest · America's 100 Greatest · 2015-16</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/gd100/2015-16.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>The Alotian</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Castle Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Victoria National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Butler National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Oak Tree National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Pete Dye GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Kinloch – USA</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Canyata Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Dallas National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Club at Black Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Arcadia Bluffs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Whispering Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>The Estancia Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Double Eagle</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Quarry at La Quinta</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Mountaintop</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Rich Harvest Links</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Flint Hills National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Hazeltine National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>The Preserve</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Eagle Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Laurel Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Crooked Stick</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Diamond Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Hudson National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>French Lick – Pete Dye</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Valhalla</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Streamsong – Red</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+    </div>
+
+    <div class="panel">
+      <h2>GOLF Magazine · Top 100 Courses in the U.S.</h2>
+      <p class="lead">Biennial editions (label years vary). Map currently uses <strong>2024-25</strong>.</p>
+      <div class="chips" id="golf-chips"><button class="chip" data-target="golf-2024-25" type="button">2024-25 <span>100</span></button><button class="chip" data-target="golf-2022-23" type="button">2022-23 <span>100</span></button><button class="chip" data-target="golf-2020-21" type="button">2020-21 <span>100</span></button><button class="chip" data-target="golf-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="golf-2015-16" type="button">2015-16 <span>100</span></button></div>
+      
+<section class="edition-panel" id="golf-2024-25" hidden>
+  <div class="edition-meta">
+    <h3>GOLF Magazine · Top 100 Courses in the U.S. · 2024-25</h3>
+    <p>100/100 rows · source: <a href="https://golf.com/travel/courses/best-golf-courses-united-states-2024-2025/" target="_blank" rel="noopener">official</a>
+    · <a href="data/history/golf100/2024-25.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Merion (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Los Angeles (North)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Chicago</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Pinehurst No. 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Riviera</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Friar’s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Winged Foot (West)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Oakland Hills (South)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>The Country Club (Clyde/Squirrel)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>California Golf Club of San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Sand Valley (The Lido)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>Camargo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Old Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Bethpage (Black)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Oak Hill (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Kiawah Island (Ocean)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Rock Creek Cattle Company</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Baltusrol (Lower)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Ohoopee Match Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Winged Foot (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>CapRock Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>TPC Sawgrass (Players Stadium)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Eastward Ho!</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Old Barnwell</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>The Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Honors Course</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Whistling Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Valley Club of Montecito</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Olympic (Lake)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Congressional (Blue)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Essex County</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Kittansett</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Harbour Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Bel-Air</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Monterey Peninsula (Shore)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Medinah (#3)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Hollywood</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Newport</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Milwaukee</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Moraine</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Fox Chapel</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Ridgewood (Championship)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>White Bear Yacht Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Ladera</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Pinehurst No. 10</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Lawsonia (Links)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Monterey Peninsula (Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Sankaty Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>St. Louis</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Old Elm</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Baltimore (Five Farms East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Trinity Forest</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Streamsong (Red)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Philadelphia Cricket (Wissahickon)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Kingsley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Gamble Sands</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="golf-2022-23" hidden>
+  <div class="edition-meta">
+    <h3>GOLF Magazine · Top 100 Courses in the U.S. · 2022-23</h3>
+    <p>100/100 rows · source: <a href="https://golf.com/travel/courses/top-100-golf-courses-in-the-us-2022-23-ranking/" target="_blank" rel="noopener">official</a>
+    · <a href="data/history/golf100/2022-23.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Merion (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Los Angeles (North)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Pinehurst (No. 2)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Riviera</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Friar’s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Winged Foot (West)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Oakland Hills (South)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>The Country Club (Clyde/Squirrel)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>California Golf Club of San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Bethpage (Black)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Kiawah Island (Ocean)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Camargo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Oak Hill (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Old Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Ohoopee Match Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Baltusrol (Lower)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Winged Foot (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Rock Creek Cattle Company</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Valley Club of Montecito</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>TPC Sawgrass (Stadium)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Honors Course</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Whistling Straits (Straits)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Congressional (Blue)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Eastward Ho!</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>CapRock Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Olympic (Lake)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>The Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Essex County</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Harbour Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Kittansett</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Monterey Peninsula (Shore)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Bel-Air</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>White Bear Yacht</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Moraine</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Ridgewood (E/W)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Milwaukee</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Monterey Peninsula (Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Lawsonia (Links)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>St. Louis</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Gamble Sands</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Glens Falls</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Newport</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Congaree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Streamsong (Red)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Baltimore (Five Farms East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Hollywood</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Kingsley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Streamsong (Blue)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Prairie Club (Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Davenport</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Brookside</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Sheep Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Sand Valley (Sand Valley)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Palmetto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Pinehurst (No. 4)</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="golf-2020-21" hidden>
+  <div class="edition-meta">
+    <h3>GOLF Magazine · Top 100 Courses in the U.S. · 2020-21</h3>
+    <p>100/100 rows · source: <a href="https://golf.com/travel/courses/golf-top-100-golf-courses-us-2020-2021/" target="_blank" rel="noopener">official</a>
+    · <a href="data/history/golf100/2020-21.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Merion (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Pinehurst (No. 2)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Los Angeles (North)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Friar’s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Winged Foot (West)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Riviera</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>The Country Club (Clyde/Squirrel)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Camargo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>California Golf Club of San Francisco</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Bethpage (Black)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>Kiawah Island (Ocean)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Ohoopee Match Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Oakland Hills (South)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Oak Hill (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Old Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>TPC Sawgrass (Stadium)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Winged Foot (East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Rock Creek Cattle Company</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Whistling Straits (Straits)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Eastward Ho!</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Olympic (Lake)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Valley Club of Montecito</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Kittansett</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Pikewood National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Gamble Sands</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>The Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Honors Course</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Essex County</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Moraine</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Monterey Peninsula (Shore)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Bel-Air</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Baltusrol (Lower)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Milwaukee</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Congaree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Harbour Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Ridgewood (E/W)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Baltimore (Five Farms East)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>White Bear Yacht</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Streamsong (Red)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>St. Louis</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Kingsley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Sheep Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Prairie Club (Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Hollywood</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Newport</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Monterey Peninsula (Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Glens Falls</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Lawsonia (Links)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Wolf Point*</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Mountain Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Sand Valley (Sand Valley)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Pinehurst (No. 4)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Palmetto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Streamsong (Blue)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Sand Valley (Mammoth Dunes)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Baltusrol (Upper)</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="golf-2017-18" hidden>
+  <div class="edition-meta">
+    <h3>GOLF Magazine · Top 100 Courses in the U.S. · 2017-18</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-magazine-usa-top-100/2017" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/golf100/2017-18.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>The California Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Harbour Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Streamsong – Red</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Sand Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>Yale Golf Course</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Old Town Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>Eastward Ho!</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Streamsong – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Rock Creek Cattle Co</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>East Lake</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Newport CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Baltimore CC – Five Farms</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Erin Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>Bel-Air CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Fox Chapel</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Ridgewood CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Philadelphia Cricket Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Torrey Pines – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Moraine Country Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>The Creek Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Colonial CC – Fort Worth</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Hazeltine National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Monterey Peninsula CC – Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Sleepy Hollow</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Aronimink</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Chambers Bay</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Mountain Lake</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+<section class="edition-panel" id="golf-2015-16" hidden>
+  <div class="edition-meta">
+    <h3>GOLF Magazine · Top 100 Courses in the U.S. · 2015-16</h3>
+    <p>100/100 rows · source: <a href="https://www.planetgolf.com/rankings/usa/golf-magazine-usa-top-100/2015" target="_blank" rel="noopener">planetgolf</a>
+    · <a href="data/history/golf100/2015-16.csv">Download CSV</a></p>
+  </div>
+  <table class="rank-table"><thead><tr><th>#</th><th>Course</th><th>Location</th></tr></thead><tbody>
+<tr><td class='rank'>1</td><td>Pine Valley</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>2</td><td>Cypress Point</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>3</td><td>Augusta National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>4</td><td>Shinnecock Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>5</td><td>Pebble Beach</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>6</td><td>Oakmont</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>7</td><td>National Golf Links of America</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>8</td><td>Merion Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>9</td><td>Sand Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>10</td><td>Pinehurst – No 2</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>11</td><td>Fishers Island</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>12</td><td>Seminole</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>13</td><td>Winged Foot – West</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>14</td><td>Pacific Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>15</td><td>Crystal Downs</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>16</td><td>San Francisco GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>17</td><td>Chicago GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>18</td><td>Prairie Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>19</td><td>Riviera CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>20</td><td>LA Country Club – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>21</td><td>Friar&#x27;s Head</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>22</td><td>Country Club – Brookline</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>23</td><td>Oakland Hills – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>24</td><td>Bethpage Black</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>25</td><td>Kiawah Island – Ocean</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>26</td><td>Garden City</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>27</td><td>Whistling Straits – Straits</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>28</td><td>Muirfield Village</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>29</td><td>TPC Sawgrass – Stadium</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>30</td><td>Shoreacres</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>31</td><td>The Camargo Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>32</td><td>Baltusrol – Lower</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>33</td><td>The Olympic Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>34</td><td>Southern Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>35</td><td>Bandon Dunes</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>36</td><td>Maidstone</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>37</td><td>Oak Hill – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>38</td><td>Somerset Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>39</td><td>The Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>40</td><td>Quaker Ridge</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>41</td><td>Ballyneal</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>42</td><td>Inverness</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>43</td><td>The California Golf Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>44</td><td>Winged Foot – East</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>45</td><td>Harbour Town</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>46</td><td>Medinah – No 3</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>47</td><td>Streamsong – Red</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>48</td><td>Old Macdonald</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>49</td><td>Old Sandwich</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>50</td><td>Bandon Trails</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>51</td><td>Plainfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>52</td><td>Wade Hampton</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>53</td><td>Pasatiempo</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>54</td><td>Yale Golf Course</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>55</td><td>The Honors</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>56</td><td>Streamsong – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>57</td><td>Piping Rock</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>58</td><td>Spyglass Hill</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>59</td><td>Sebonack</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>60</td><td>Yeamans Hall</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>61</td><td>Rock Creek Cattle Co</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>62</td><td>The Valley Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>63</td><td>Congressional – Blue</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>64</td><td>Baltusrol – Upper</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>65</td><td>Newport CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>66</td><td>Shadow Creek</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>67</td><td>Essex County Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>68</td><td>Eastward Ho!</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>69</td><td>Myopia Hunt Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>70</td><td>Peachtree</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>71</td><td>Nanea</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>72</td><td>Cherry Hills</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>73</td><td>The Creek Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>74</td><td>Kittansett Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>75</td><td>Milwaukee CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>76</td><td>Chambers Bay</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>77</td><td>Monterey Peninsula CC – Shore</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>78</td><td>Old Town Club</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>79</td><td>Ridgewood CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>80</td><td>East Lake</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>81</td><td>Gozzer Ranch</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>82</td><td>Interlachen</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>83</td><td>Trump National – Old</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>84</td><td>Hazeltine National</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>85</td><td>Scioto</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>86</td><td>Boston GC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>87</td><td>Olympia Fields – North</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>88</td><td>Calusa Pines</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>89</td><td>Baltimore CC – Five Farms</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>90</td><td>Bel-Air CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>91</td><td>Colonial CC – Fort Worth</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>92</td><td>Doral – Blue Monster</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>93</td><td>Mountain Lake</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>94</td><td>Blackwolf Run – River</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>95</td><td>Fox Chapel</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>96</td><td>Bellerive CC</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>97</td><td>Country Club of Fairfield</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>98</td><td>Crooked Stick</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>99</td><td>Torrey Pines – South</td><td class='loc'>—</td></tr>
+<tr><td class='rank'>100</td><td>Aronimink</td><td class='loc'>—</td></tr>
+</tbody></table>
+</section>
+    </div>
+
+    <p class="foot">
+      Rankings are included for personal research. Obtain permission before commercial redistribution.
+      Location is filled when the source page provides it (notably Golf Digest 2025-26 official page).
+      Gaps / notes: see <a href="data/history/index.json">index.json</a>.
+    </p>
+  </div>
+<script>
+(function() {
+  function activate(groupId, targetId) {
+    const group = document.getElementById(groupId);
+    group.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.target === targetId));
+    const prefix = groupId === 'gd-chips' ? 'gd-' : 'golf-';
+    document.querySelectorAll('section.edition-panel').forEach(sec => {
+      if (!sec.id.startsWith(prefix)) return;
+      sec.hidden = sec.id !== targetId;
+    });
+  }
+  document.querySelectorAll('.chips').forEach(group => {
+    group.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('.chip');
+      if (!btn) return;
+      activate(group.id, btn.dataset.target);
+    });
+    const first = group.querySelector('.chip');
+    if (first) activate(group.id, first.dataset.target);
+  });
+})();
+</script>
+</body>
+</html>

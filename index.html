@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
 <title>U.S. Golf Courses — State Rankings Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -246,16 +246,87 @@ body.table-only { background: #0b1210; }
 }
 .table-panel td.addr { max-width: 180px; }
 
+
+/* ---- Mobile layout ---- */
+.mobile-bar {
+  display: none;
+  position: absolute; z-index: 1100; left: 12px; right: 12px; top: 12px;
+  gap: 8px; pointer-events: none;
+}
+.mobile-bar > * { pointer-events: auto; }
+.mobile-bar .mbtn {
+  flex: 1;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--cream);
+  backdrop-filter: blur(14px);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.mobile-bar .mbtn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+@media (max-width: 820px) {
+  .mobile-bar { display: flex; }
+  .ui.top-left {
+    top: 64px; left: 12px; right: 12px; max-width: none;
+    display: none;
+    max-height: calc(100vh - 88px);
+    overflow: auto;
+  }
+  .ui.top-left.mobile-open { display: flex; z-index: 1200; }
+  .ui.top-right { display: none; }
+  body.filters-open .ui.top-right { display: none; }
+  .ui.bottom-left { bottom: 12px; left: 12px; transform: scale(0.92); transform-origin: bottom left; }
+  .ui.bottom-right { display: none; }
+  .table-panel {
+    left: 0 !important; right: 0 !important; top: auto !important;
+    bottom: 0 !important; width: 100% !important; height: 48vh !important;
+    border-radius: 18px 18px 0 0 !important; max-width: none !important;
+  }
+  .table-panel.open { display: flex; }
+  body.table-open .bottom-left { display: none !important; }
+  body.table-only .mobile-bar { display: none; }
+  body.table-only .table-panel {
+    inset: 0 !important; height: 100% !important; border-radius: 0 !important;
+  }
+  .filters { grid-template-columns: 1fr 1fr; }
+  .chips { gap: 8px; }
+  .chip { padding: 10px 12px; font-size: 13px; }
+  .brand h1 { font-size: 22px; }
+  .leaflet-control-zoom { margin-top: 64px !important; margin-right: 12px !important; }
+  body.table-open .leaflet-control-zoom { margin-bottom: 50vh !important; }
+  .table-panel .th { padding: 12px 14px; }
+  .table-panel .th h2 { font-size: 18px; }
+  .table-panel table { font-size: 13px; }
+  .table-panel tbody td { padding: 12px 10px; }
+}
+@media (max-width: 820px) {
+  body.filters-open .ui.top-left { display: flex; }
+}
+
 </style>
 </head>
 <body>
 <div id="map"></div>
+
+<div class="mobile-bar" id="mobileBar">
+  <button type="button" class="mbtn" id="mobileFiltersBtn">Filters</button>
+  <button type="button" class="mbtn" id="mobileTableBtn">Table</button>
+</div>
+
 <div class="vignette"></div>
 
 <div class="ui top-left">
   <div class="card brand">
     <h1>American <span>Golf</span> Atlas</h1>
     <p>State leaderboards × national Top 100 cross-ref · free OSM / imagery · no API keys</p>
+    <p style="margin:8px 0 0;font-size:12.5px"><a href="history.html" style="color:var(--gold)">Top 100 history</a></p>
   </div>
   <div class="card">
     <div class="stat-row" id="stats"></div>
@@ -752,6 +823,59 @@ function render() {
 
 }
 ['q','state','access','minLists'].forEach(id => document.getElementById(id).addEventListener('input', render));
+
+// Mobile chrome
+(function setupMobileChrome() {
+  const filtersBtn = document.getElementById('mobileFiltersBtn');
+  const tableBtn = document.getElementById('mobileTableBtn');
+  const topLeft = document.querySelector('.ui.top-left');
+  if (!filtersBtn || !tableBtn || !topLeft) return;
+
+  filtersBtn.addEventListener('click', () => {
+    const open = document.body.classList.toggle('filters-open');
+    topLeft.classList.toggle('mobile-open', open);
+    filtersBtn.classList.toggle('active', open);
+    filtersBtn.textContent = open ? 'Close' : 'Filters';
+  });
+
+  tableBtn.addEventListener('click', () => {
+    const panel = document.getElementById('tablePanel');
+    const open = !(panel && panel.classList.contains('open')) && !document.body.classList.contains('table-only');
+    if (open) {
+      // ensure some list context: if none, use Top 100
+      if (!top100Only && requiredLists.size === 0 && regionalFilters.length === 0) {
+        const star = document.querySelector('#listChips .chip[data-filter="top100"]');
+        if (star && !star.classList.contains('active')) star.click();
+      }
+      showTablePanel(true);
+      setTableOnly(true);
+      // close filters drawer when table takes over
+      document.body.classList.remove('filters-open');
+      topLeft.classList.remove('mobile-open');
+      filtersBtn.classList.remove('active');
+      filtersBtn.textContent = 'Filters';
+    } else {
+      setTableOnly(false);
+      showTablePanel(false);
+    }
+    const now = document.body.classList.contains('table-only') || (panel && panel.classList.contains('open'));
+    tableBtn.classList.toggle('active', now);
+    tableBtn.textContent = now ? 'Map' : 'Table';
+  });
+
+  // When closing table-only via Show map button, sync mobile Table button
+  const onlyBtn = document.getElementById('tableOnlyBtn');
+  if (onlyBtn) {
+    onlyBtn.addEventListener('click', () => {
+      setTimeout(() => {
+        const on = document.body.classList.contains('table-only');
+        tableBtn.classList.toggle('active', on);
+        tableBtn.textContent = on ? 'Map' : 'Table';
+      }, 0);
+    });
+  }
+})();
+
 render();
 </script>
 </body>

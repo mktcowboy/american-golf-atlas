@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-09-08T20:24:51.811595+00:00",
+  "note": "Historical Top 100 tables for research. Live map uses current editions only and is unchanged.",
+  "gaps": [
+    {
+      "list": "gd100",
+      "edition": "pre-2015",
+      "notes": "Planet Golf has archives back to 1985; this build targets 2015-16 onward for manageability."
+    },
+    {
+      "list": "golf100",
+      "edition": "2019-20",
+      "notes": "GOLF Mag skipped a classic 2019 label; next after 2017-18 is 2020-21."
+    }
+  ],
+  "gd100": {
+    "publisher": "Golf Digest",
+    "list": "America's 100 Greatest",
+    "editions": [
+      {
+        "edition": "2025-26",
+        "year_key": 2025,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking",
+        "source_type": "official",
+        "cache_file": "cache/gd100_2025-26_official.html",
+        "notes": "from existing GD100.html cache"
+      },
+      {
+        "edition": "2015-16",
+        "year_key": 2015,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015",
+        "source_type": "planetgolf",
+        "cache_file": "cache/gd100_2015-16_planetgolf.html",
+        "notes": "planetgolf fetched http=200"
+      },
+      {
+        "edition": "2017-18",
+        "year_key": 2017,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017",
+        "source_type": "planetgolf",
+        "cache_file": "cache/gd100_2017-18_planetgolf.html",
+        "notes": "planetgolf fetched http=200"
+      },
+      {
+        "edition": "2019-20",
+        "year_key": 2019,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019",
+        "source_type": "planetgolf",
+        "cache_file": "cache/gd100_2019-20_planetgolf.html",
+        "notes": "planetgolf fetched http=200"
+      },
+      {
+        "edition": "2021-22",
+        "year_key": 2021,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021",
+        "source_type": "planetgolf",
+        "cache_file": "cache/gd100_2021-22_planetgolf.html",
+        "notes": "planetgolf cache http=200"
+      },
+      {
+        "edition": "2023-24",
+        "year_key": 2023,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023",
+        "source_type": "planetgolf",
+        "cache_file": "cache/gd100_2023-24_planetgolf.html",
+        "notes": "planetgolf cache http=200"
+      }
+    ],
+    "total_rows": 600,
+    "editions_complete": 6
+  },
+  "golf100": {
+    "publisher": "GOLF Magazine / GOLF.com",
+    "list": "Top 100 Courses in the U.S.",
+    "editions": [
+      {
+        "edition": "2015-16",
+        "year_key": 2015,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-magazine-usa-top-100/2015",
+        "source_type": "planetgolf",
+        "cache_file": "cache/golf100_2015-16_planetgolf.html",
+        "notes": "planetgolf fetched http=200"
+      },
+      {
+        "edition": "2017-18",
+        "year_key": 2017,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://www.planetgolf.com/rankings/usa/golf-magazine-usa-top-100/2017",
+        "source_type": "planetgolf",
+        "cache_file": "cache/golf100_2017-18_planetgolf.html",
+        "notes": "planetgolf fetched http=200; official tried fetched http=200 n=0"
+      },
+      {
+        "edition": "2020-21",
+        "year_key": 2020,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://golf.com/travel/courses/golf-top-100-golf-courses-us-2020-2021/",
+        "source_type": "official",
+        "cache_file": "cache/golf100_2020-21_planetgolf.html",
+        "notes": "official fetched http=200; planetgolf had 100"
+      },
+      {
+        "edition": "2022-23",
+        "year_key": 2022,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://golf.com/travel/courses/top-100-golf-courses-in-the-us-2022-23-ranking/",
+        "source_type": "official",
+        "cache_file": "cache/golf100_2022-23_planetgolf.html",
+        "notes": "official fetched http=200; planetgolf had 100"
+      },
+      {
+        "edition": "2024-25",
+        "year_key": 2024,
+        "row_count": 100,
+        "complete": true,
+        "source_url": "https://golf.com/travel/courses/best-golf-courses-united-states-2024-2025/",
+        "source_type": "official",
+        "cache_file": "cache/golf100_2024-25_planetgolf.html",
+        "notes": "official existing_cache http=200; planetgolf had 100"
+      }
+    ],
+    "total_rows": 500,
+    "editions_complete": 5
+  }
+}
