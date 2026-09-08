@@ -2,7 +2,7 @@
 
 Interactive map of U.S. golf courses — state leaderboards cross-referenced with national Top 100 lists.
 
-**Live site:** (GitHub Pages URL after deploy)
+**Live site:** https://mktcowboy.github.io/american-golf-atlas/
 
 ## Features
 - Imagery / dark / light basemaps (free tiles, no API keys)
