@@ -317,12 +317,9 @@ body.table-only { background: #0b1210; }
     <table>
       <thead>
         <tr>
-          <th>#</th>
           <th>Course</th>
           <th>City</th>
           <th>Access</th>
-          <th>Address</th>
-          <th>Website</th>
           <th>Lists</th>
         </tr>
       </thead>
@@ -627,19 +624,15 @@ function renderTable(filtered) {
   document.getElementById('tableSub').textContent = `${rows.length} courses · click a row to fly on the map`;
   const body = document.getElementById('tableBody');
   body.innerHTML = rows.map((c, idx) => {
-    const website = c.website
-      ? `<a href="${escapeHtml(c.website)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open</a>`
-      : `<span class="muted">—</span>`;
-    const loc = escapeHtml(c.city || c.state || '');
-    const addr = c.address ? `<span title="${escapeHtml(c.address)}">${escapeHtml(c.address)}</span>` : '<span class="muted">—</span>';
+      const rankLabel = escapeHtml(displayRank(c));
+    const courseInner = `${c.top100_usa ? '★ ' : ''}<span class="muted">#${rankLabel}</span> ${escapeHtml(c.name)}`;
+    const courseCell = c.website
+      ? `<a href="${escapeHtml(c.website)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${courseInner}</a>`
+      : `<div class="name">${courseInner}</div>`;
     return `<tr data-idx="${idx}">
-      <td class="rank">${escapeHtml(displayRank(c))}</td>
-      <td><div class="name">${c.top100_usa ? '★ ' : ''}${escapeHtml(c.name)}</div>
-          <div class="muted">${escapeHtml(c.code || '')}${c.architect ? ' · ' + escapeHtml(c.architect) : ''}${c.phone ? ' · ' + escapeHtml(c.phone) : ''}</div></td>
-      <td class="muted">${loc}</td>
+      <td>${courseCell}</td>
+      <td class="muted">${escapeHtml(c.city || c.state || '')}</td>
       <td class="muted">${escapeHtml(c.access || '')}</td>
-      <td class="muted addr">${addr}</td>
-      <td>${website}</td>
       <td>${listPills(c)}</td>
     </tr>`;
   }).join('');
