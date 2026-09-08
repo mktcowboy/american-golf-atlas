@@ -684,15 +684,24 @@ const accessSel = document.getElementById('access');
 ['Public','Private','Resort','Semi-Private','Unknown'].forEach(s => {
   const o=document.createElement('option'); o.value=s; o.textContent=s; accessSel.appendChild(o);
 });
+function normalizeAccess(raw) {
+  const s = String(raw || '').trim();
+  if (!s || /^unknown$/i.test(s)) return 'Unknown';
+  const low = s.toLowerCase();
+  // Private/Resort (and Resort/Private) → Semi-Private
+  if (/private/.test(low) && /resort/.test(low)) return 'Semi-Private';
+  if (low.includes('semi')) return 'Semi-Private';
+  if (/public|municipal/.test(low) && /resort/.test(low)) return 'Resort';
+  if (low.includes('resort') && !/private|public|semi/.test(low)) return 'Resort';
+  if (low.includes('resort')) return 'Resort';
+  if (/public|municipal|university/.test(low)) return 'Public';
+  if (low.includes('private') || low.includes('military') || low.includes('community')) return 'Private';
+  if (low.includes('resort')) return 'Resort';
+  return s;
+}
 function accessMatches(raw, filter) {
   if (!filter) return true;
-  const s = String(raw || '').toLowerCase();
-  if (filter === 'Unknown') return !s || s === 'unknown';
-  if (filter === 'Semi-Private') return s.includes('semi');
-  if (filter === 'Public') return /public|municipal/.test(s);
-  if (filter === 'Private') return s.includes('private') || s.includes('military');
-  if (filter === 'Resort') return s.includes('resort');
-  return s === filter.toLowerCase();
+  return normalizeAccess(raw) === filter;
 }
 
 let requiredLists = new Set();
@@ -762,7 +771,7 @@ function popupHtml(c) {
     top.push(`<span class="badge">${id}</span>`);
   });
   const loc = [c.address, c.city, c.code].filter(Boolean).join(', ') || c.code;
-  const bits = [c.access, c.par?`par ${c.par}`:null, c.architect||null].filter(Boolean).join(' · ');
+  const bits = [normalizeAccess(c.access), c.par?`par ${c.par}`:null, c.architect||null].filter(Boolean).join(' · ');
   const links = [
     c.website ? `<a href="${c.website}" target="_blank" rel="noopener">Website</a>` : null,
     c.t100 ? `<a href="${c.t100}" target="_blank" rel="noopener">Ranking page</a>` : null,
@@ -898,7 +907,7 @@ function renderTable(filtered) {
       <td>${courseCell}</td>
       <td class="muted">${escapeHtml(c.city || '')}</td>
       <td class="muted">${escapeHtml(c.state || c.code || '')}</td>
-      <td class="muted">${escapeHtml(c.access || '')}</td>
+      <td class="muted">${escapeHtml(normalizeAccess(c.access))}</td>
       <td>${listPills(c)}</td>
     </tr>`;
   }).join('');
