@@ -688,16 +688,15 @@ function normalizeAccess(raw) {
   const s = String(raw || '').trim();
   if (!s || /^unknown$/i.test(s)) return 'Unknown';
   const low = s.toLowerCase();
-  // Private/Resort (and Resort/Private) → Semi-Private
-  if (/private/.test(low) && /resort/.test(low)) return 'Semi-Private';
+  // Keep Private strict: only exact "Private". Hybrids err toward playable/less exclusive.
+  if (low === 'private') return 'Private';
   if (low.includes('semi')) return 'Semi-Private';
-  if (/public|municipal/.test(low) && /resort/.test(low)) return 'Resort';
-  if (low.includes('resort') && !/private|public|semi/.test(low)) return 'Resort';
+  if (low.includes('private')) return 'Semi-Private'; // Private/Resort, Private/Community, etc.
+  if (/public|municipal|university/.test(low) && low.includes('resort')) return 'Resort';
   if (low.includes('resort')) return 'Resort';
   if (/public|municipal|university/.test(low)) return 'Public';
-  if (low.includes('private') || low.includes('military') || low.includes('community')) return 'Private';
-  if (low.includes('resort')) return 'Resort';
-  return s;
+  if (low.includes('military')) return 'Semi-Private';
+  return 'Unknown';
 }
 function accessMatches(raw, filter) {
   if (!filter) return true;
