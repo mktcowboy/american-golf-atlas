@@ -6,7 +6,7 @@ Interactive map of notable U.S. golf courses — state and regional leaderboards
 
 ## What’s included
 
-- Map with imagery, dark, and light basemaps (free tiles; no API keys)
+- Map with imagery, dark, and light basemaps
 - Filters for ★ Top 100 USA, Best in State (#1 per state), national lists, and regional chips (e.g. California Top 100, Texas Top 50)
 - Ranked table with CSV export and a map-only / hide-panels mode
 - Separate history archive of Golf Digest and GOLF Magazine Top 100 editions
