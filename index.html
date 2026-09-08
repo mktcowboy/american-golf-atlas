@@ -321,7 +321,6 @@ body.table-only { background: #0b1210; }
           <th>Course</th>
           <th>City</th>
           <th>Access</th>
-          <th>Holes</th>
           <th>Address</th>
           <th>Website</th>
           <th>Lists</th>
@@ -632,7 +631,6 @@ function renderTable(filtered) {
       ? `<a href="${escapeHtml(c.website)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open</a>`
       : `<span class="muted">—</span>`;
     const loc = escapeHtml(c.city || c.state || '');
-    const holes = (c.holes != null && c.holes !== '') ? escapeHtml(c.holes) : '<span class="muted">—</span>';
     const addr = c.address ? `<span title="${escapeHtml(c.address)}">${escapeHtml(c.address)}</span>` : '<span class="muted">—</span>';
     return `<tr data-idx="${idx}">
       <td class="rank">${escapeHtml(displayRank(c))}</td>
@@ -640,7 +638,6 @@ function renderTable(filtered) {
           <div class="muted">${escapeHtml(c.code || '')}${c.architect ? ' · ' + escapeHtml(c.architect) : ''}${c.phone ? ' · ' + escapeHtml(c.phone) : ''}</div></td>
       <td class="muted">${loc}</td>
       <td class="muted">${escapeHtml(c.access || '')}</td>
-      <td class="muted">${holes}</td>
       <td class="muted addr">${addr}</td>
       <td>${website}</td>
       <td>${listPills(c)}</td>
