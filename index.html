@@ -525,7 +525,7 @@ body.chrome-hidden .chrome-toggle { margin-top: 0; right: 12px; left: auto; tran
         <button class="chip regional" data-regional="CO" data-depth="50" title="Colorado Top 50">CO 50</button>
       </div>
     </details>
-    <div class="chip-hint">Lists OR · BIS = #1/state · ★ clears when you pick a list/region</div>
+    <div class="chip-hint">One list at a time · BIS = #1/state · regions clear national lists</div>
   </div>
 </div>
 
@@ -695,28 +695,44 @@ function syncRegional() {
 }
 document.querySelectorAll('#listChips .chip').forEach(btn => {
   btn.addEventListener('click', () => {
+    // Single-select: only one top list active at a time
     if (btn.dataset.filter === 'top100') {
-      btn.classList.toggle('active');
-      top100Only = btn.classList.contains('active');
-      if (top100Only) {
-        document.querySelectorAll('#listChips .chip[data-list]').forEach(b => b.classList.remove('active'));
+      const turnOn = !btn.classList.contains('active');
+      document.querySelectorAll('#listChips .chip').forEach(b => b.classList.remove('active'));
+      clearRegional();
+      if (turnOn) {
+        btn.classList.add('active');
+        top100Only = true;
         requiredLists = new Set();
-        clearRegional();
+      } else {
+        top100Only = false;
+        requiredLists = new Set();
       }
     } else {
-      btn.classList.toggle('active');
-      if (top100Btn) top100Btn.classList.remove('active');
+      const turnOn = !btn.classList.contains('active');
+      document.querySelectorAll('#listChips .chip').forEach(b => b.classList.remove('active'));
+      clearRegional();
       top100Only = false;
-      requiredLists = new Set([...document.querySelectorAll('#listChips .chip[data-list].active')].map(b => b.dataset.list));
+      if (turnOn) {
+        btn.classList.add('active');
+        requiredLists = new Set([btn.dataset.list]);
+      } else {
+        requiredLists = new Set();
+      }
     }
     render();
   });
 });
 document.querySelectorAll('#regionalChips .chip').forEach(btn => {
   btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
+    // Single-select regions too; clears national list chips
+    const turnOn = !btn.classList.contains('active');
+    document.querySelectorAll('#regionalChips .chip').forEach(b => b.classList.remove('active'));
     if (top100Btn) top100Btn.classList.remove('active');
+    document.querySelectorAll('#listChips .chip[data-list]').forEach(b => b.classList.remove('active'));
     top100Only = false;
+    requiredLists = new Set();
+    if (turnOn) btn.classList.add('active');
     syncRegional();
     render();
   });
