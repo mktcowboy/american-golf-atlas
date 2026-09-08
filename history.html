@@ -138,6 +138,29 @@ a:hover { text-decoration: underline; }
 .jump .btn:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
 #gd-section, #golf-section { scroll-margin-top: 18px; }
 
+
+.list-tabs {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin: 0 0 18px;
+}
+.list-tab {
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.list-tab:hover { border-color: var(--gold); color: var(--gold); }
+.list-tab.active {
+  background: linear-gradient(135deg, #8a6a12, #c49a46);
+  border-color: var(--gold);
+  color: #fff8e6;
+}
+.list-panel[hidden] { display: none !important; }
+
 </style>
 </head>
 <body>
@@ -155,6 +178,7 @@ a:hover { text-decoration: underline; }
 
     <div class="panel">
       <h2>Catalog</h2>
+      <p class="lead" style="margin-top:0">Use the tabs below to switch between Golf Digest and GOLF Magazine — they are different rankings.</p>
       <p class="lead">Free public sources only (official story pages when available, Planet Golf archives otherwise). HTML caches live under <code>data/history/cache/</code>.</p>
       <div class="stats">
         <div class="stat"><b>6</b><span>GD editions</span></div>
@@ -169,11 +193,11 @@ a:hover { text-decoration: underline; }
     </div>
 
 
-    <div class="jump" role="navigation" aria-label="Lists">
-      <a class="btn" href="#gd-section">Golf Digest (GD100)</a>
-      <a class="btn" href="#golf-section">GOLF Magazine (GOLF100)</a>
+    <div class="list-tabs" role="tablist" aria-label="Publication">
+      <button type="button" class="list-tab active" role="tab" aria-selected="true" data-list="gd">Golf Digest (GD100)</button>
+      <button type="button" class="list-tab" role="tab" aria-selected="false" data-list="golf">GOLF Magazine (GOLF100)</button>
     </div>
-    <div class="panel">
+    <div class="panel list-panel" data-list-panel="gd">
       <h2 id="gd-section">Golf Digest · America's 100 Greatest</h2>
       <p class="lead">Biennial editions. Map currently uses <strong>2025-26</strong>.</p>
       <div class="chips" id="gd-chips"><button class="chip" data-target="gd-2025-26" type="button">2025-26 <span>100</span></button><button class="chip" data-target="gd-2023-24" type="button">2023-24 <span>100</span></button><button class="chip" data-target="gd-2021-22" type="button">2021-22 <span>100</span></button><button class="chip" data-target="gd-2019-20" type="button">2019-20 <span>100</span></button><button class="chip" data-target="gd-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="gd-2015-16" type="button">2015-16 <span>100</span></button></div>
@@ -834,7 +858,7 @@ a:hover { text-decoration: underline; }
 </section>
     </div>
 
-    <div class="panel">
+    <div class="panel list-panel" data-list-panel="golf" hidden>
       <h2 id="golf-section">GOLF Magazine · Top 100 Courses in the U.S.</h2>
       <p class="lead">Biennial editions (label years vary). Map currently uses <strong>2024-25</strong>.</p>
       <div class="chips" id="golf-chips"><button class="chip" data-target="golf-2024-25" type="button">2024-25 <span>100</span></button><button class="chip" data-target="golf-2022-23" type="button">2022-23 <span>100</span></button><button class="chip" data-target="golf-2020-21" type="button">2020-21 <span>100</span></button><button class="chip" data-target="golf-2017-18" type="button">2017-18 <span>100</span></button><button class="chip" data-target="golf-2015-16" type="button">2015-16 <span>100</span></button></div>
@@ -1394,8 +1418,9 @@ a:hover { text-decoration: underline; }
   </div>
 <script>
 (function() {
-  function activate(groupId, targetId) {
+  function activateEdition(groupId, targetId) {
     const group = document.getElementById(groupId);
+    if (!group) return;
     group.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.target === targetId));
     const prefix = groupId === 'gd-chips' ? 'gd-' : 'golf-';
     document.querySelectorAll('section.edition-panel').forEach(sec => {
@@ -1403,15 +1428,43 @@ a:hover { text-decoration: underline; }
       sec.hidden = sec.id !== targetId;
     });
   }
+
+  function showList(which) {
+    document.querySelectorAll('.list-tab').forEach(tab => {
+      const on = tab.dataset.list === which;
+      tab.classList.toggle('active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('[data-list-panel]').forEach(panel => {
+      panel.hidden = panel.dataset.listPanel !== which;
+    });
+    // ensure an edition is visible in the active list
+    const groupId = which === 'gd' ? 'gd-chips' : 'golf-chips';
+    const group = document.getElementById(groupId);
+    const active = group && group.querySelector('.chip.active');
+    const first = group && group.querySelector('.chip');
+    const target = (active || first);
+    if (target) activateEdition(groupId, target.dataset.target);
+    history.replaceState(null, '', which === 'golf' ? '#golf-section' : '#gd-section');
+  }
+
+  document.querySelectorAll('.list-tab').forEach(tab => {
+    tab.addEventListener('click', () => showList(tab.dataset.list));
+  });
+
   document.querySelectorAll('.chips').forEach(group => {
     group.addEventListener('click', (ev) => {
       const btn = ev.target.closest('.chip');
       if (!btn) return;
-      activate(group.id, btn.dataset.target);
+      activateEdition(group.id, btn.dataset.target);
     });
     const first = group.querySelector('.chip');
-    if (first) activate(group.id, first.dataset.target);
+    if (first) activateEdition(group.id, first.dataset.target);
   });
+
+  // deep-link: #golf-section opens GOLF Mag tab
+  const hash = (location.hash || '').toLowerCase();
+  showList(hash.includes('golf') ? 'golf' : 'gd');
 })();
 </script>
 </body>
