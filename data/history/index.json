@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-09-08T20:24:51.811595+00:00",
-  "note": "Historical Top 100 tables for research. Live map uses current editions only and is unchanged.",
+  "note": "Historical Top 100 tables for research. Live map uses current editions only and is unchanged. Locations enriched from course DB + GD 2025-26 (100.0% filled; 0 unmatched names).",
   "gaps": [
     {
       "list": "gd100",
@@ -138,5 +138,68 @@
     ],
     "total_rows": 500,
     "editions_complete": 5
+  },
+  "location_enrichment": {
+    "enriched_at": "2026-09-08T21:41:56.149779+00:00",
+    "filled_pct": 100.0,
+    "unmatched_count": 0,
+    "unmatched_names": [],
+    "per_file": {
+      "gd100/2015-16.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "gd100/2017-18.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "gd100/2019-20.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "gd100/2021-22.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "gd100/2023-24.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "gd100/2025-26.csv": {
+        "empty_before": 0,
+        "empty_after": 0,
+        "filled": 0
+      },
+      "golf100/2015-16.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "golf100/2017-18.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "golf100/2020-21.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "golf100/2022-23.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      },
+      "golf100/2024-25.csv": {
+        "empty_before": 100,
+        "empty_after": 0,
+        "filled": 100
+      }
+    }
   }
 }

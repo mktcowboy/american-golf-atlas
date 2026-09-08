@@ -1,4 +1,504 @@
 rank,course_name,location,edition,source_url
+1,Augusta National,"Augusta, GA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+2,Pine Valley,"Pine Valley, NJ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+3,Cypress Point,"Pebble Beach, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+4,Shinnecock Hills,"Southampton, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+5,Merion Golf Club,"Ardmore, PA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+6,Oakmont,"Oakmont, PA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+7,Pebble Beach,"Pebble Beach, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+8,National Golf Links of America,"Southampton, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+9,Winged Foot – West,"Mamaroneck, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+10,Fishers Island,"Fishers Island, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+11,Sand Hills,"Mullen, NE",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+12,Seminole,"Juno Beach, FL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+13,Crystal Downs,"Frankfort, MI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+14,Chicago GC,"Wheaton, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+15,Muirfield Village,"Dublin, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+16,Oak Hill – East,"Rochester, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+17,Oakland Hills – South,"Bloomfield Hills, MI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+18,Pacific Dunes,"Bandon, OR",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+19,Country Club – Brookline,"Pepper Pike, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+20,Kiawah Island – Ocean,"Kiawah Island, SC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+21,Wade Hampton,"Cashiers, NC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+22,Whistling Straits – Straits,"Sheboygan, WI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+23,Friar's Head,"Riverhead, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+24,Riviera CC,"Pacific Palisades, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+25,Prairie Dunes,"Hutchinson, KS",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+26,LA Country Club – North,"Beavercreek, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+27,The Alotian,"Roland, AR",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+28,Pinehurst – No 2,"Pinehurst, NC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+29,Southern Hills,"Tulsa, OK",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+30,Gozzer Ranch,"Harrison, ID",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+31,The Honors,"Ooltewah, TN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+32,Shadow Creek,"North Las Vegas, NV",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+33,Peachtree,"Atlanta, GA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+34,San Francisco GC,"San Francisco, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+35,The Olympic Club,"San Francisco, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+36,The Golf Club,"New Albany, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+37,Bandon Dunes,"Bandon, OR",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+38,Sebonack,"Southampton, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+39,Medinah – No 3,"Medinah, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+40,Castle Pines,"Castle Rock, CO",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+41,Baltusrol – Lower,"Springfield, NJ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+42,Erin Hills,"Hartford, WI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+43,Bethpage Black,"Farmingdale, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+44,Pikewood National,"Morgantown, WV",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+45,Victoria National,"Newburgh, IN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+46,Butler National,"Oak Brook, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+47,TPC Sawgrass – Stadium,"Ponte Vedra Beach, FL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+48,Spyglass Hill,"Pebble Beach, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+49,Garden City,"Garden City, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+50,Scioto,"Columbus, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+51,Oak Tree National,"Edmond, OK",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+52,The Camargo Club,"Cincinnati, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+53,Pete Dye GC,"Bridgeport, WV",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+54,Ballyneal,"Holyoke, CO",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+55,Old Macdonald,"Bandon, OR",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+56,Kinloch – USA,"Manakin Sabot, VA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+57,Interlachen,"Edina, MN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+58,Baltusrol – Upper,"Springfield, NJ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+59,Winged Foot – East,"Mamaroneck, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+60,Canyata Golf Club,"Marshall, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+61,Dallas National,"Dallas, TX",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+62,Milwaukee CC,"River Hills, WI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+63,Club at Black Rock,"Coeur d'Alene, ID",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+64,Yeamans Hall,"Hanahan, SC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+65,Arcadia Bluffs,"Arcadia, MI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+66,Olympia Fields – North,"Olympia Fields, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+67,Monterey Peninsula CC – Shore,"Pebble Beach, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+68,Whispering Pines,"Trinity, TX",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+69,Inverness,"Toledo, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+70,The Estancia Club,"Scottsdale, AZ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+71,Quaker Ridge,"Scarsdale, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+72,Plainfield,"Edison, NJ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+73,Somerset Hills,"Bernardsville, NJ",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+74,Bandon Trails,"Bandon, OR",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+75,Boston GC,"Hingham, MA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+76,Double Eagle,"Galena, OH",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+77,Quarry at La Quinta,"La Quinta, CA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+78,Mountaintop,"Cashiers, NC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+79,Old Sandwich,"Plymouth, MA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+80,Cherry Hills,"Englewood, CO",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+81,Rich Harvest Links,"Sugar Grove, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+82,Congressional – Blue,"Bethesda, MD",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+83,The Valley Club,"Aurora, CO",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+84,Kittansett Club,"Marion, MA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+85,Flint Hills National,"Andover, KS",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+86,Hazeltine National,"Benton Township, MN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+87,The Preserve,"Vancleave, MS",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+88,Calusa Pines,"Naples, FL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+89,Eagle Point,"Wilmington, NC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+90,Aronimink,"Newtown Square, PA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+91,Blackwolf Run – River,"Kohler, WI",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+92,Laurel Valley,"Ligonier, PA",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+93,Crooked Stick,"Carmel, IN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+94,Diamond Creek,"Banner Elk, NC",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+95,Hudson National,"Croton On Hudson, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+96,French Lick – Pete Dye,"Orange County, IN",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+97,Valhalla,"Louisville, KY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+98,Maidstone,"East Hampton, NY",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+99,Shoreacres,"Lake Bluff, IL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+100,Streamsong – Red,"Bowling Green, FL",2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
+1,Pine Valley,"Pine Valley, NJ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+2,Augusta National,"Augusta, GA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+3,Cypress Point,"Pebble Beach, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+4,Shinnecock Hills,"Southampton, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+5,Oakmont,"Oakmont, PA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+6,Merion Golf Club,"Ardmore, PA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+7,Pebble Beach,"Pebble Beach, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+8,National Golf Links of America,"Southampton, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+9,Sand Hills,"Mullen, NE",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+10,Winged Foot – West,"Mamaroneck, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+11,Fishers Island,"Fishers Island, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+12,Crystal Downs,"Frankfort, MI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+13,Seminole,"Juno Beach, FL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+14,Chicago GC,"Wheaton, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+15,Muirfield Village,"Dublin, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+16,Country Club – Brookline,"Pepper Pike, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+17,Oakland Hills – South,"Bloomfield Hills, MI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+18,Pacific Dunes,"Bandon, OR",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+19,Friar's Head,"Riverhead, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+20,Oak Hill – East,"Rochester, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+21,Kiawah Island – Ocean,"Kiawah Island, SC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+22,Whistling Straits – Straits,"Sheboygan, WI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+23,LA Country Club – North,"Beavercreek, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+24,Riviera CC,"Pacific Palisades, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+25,Wade Hampton,"Cashiers, NC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+26,Shadow Creek,"North Las Vegas, NV",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+27,The Alotian,"Roland, AR",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+28,Gozzer Ranch,"Harrison, ID",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+29,Prairie Dunes,"Hutchinson, KS",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+30,Pinehurst – No 2,"Pinehurst, NC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+31,The Olympic Club,"San Francisco, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+32,The Honors,"Ooltewah, TN",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+33,Peachtree,"Atlanta, GA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+34,The Golf Club,"New Albany, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+35,Southern Hills,"Tulsa, OK",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+36,Bandon Dunes,"Bandon, OR",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+37,San Francisco GC,"San Francisco, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+38,Bethpage Black,"Farmingdale, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+39,Baltusrol – Lower,"Springfield, NJ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+40,Pikewood National,"Morgantown, WV",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+41,Sebonack,"Southampton, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+42,Castle Pines,"Castle Rock, CO",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+43,Victoria National,"Newburgh, IN",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+44,Erin Hills,"Hartford, WI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+45,Butler National,"Oak Brook, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+46,Garden City,"Garden City, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+47,Old Macdonald,"Bandon, OR",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+48,Medinah – No 3,"Medinah, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+49,Spyglass Hill,"Pebble Beach, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+50,Ballyneal,"Holyoke, CO",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+51,TPC Sawgrass – Stadium,"Ponte Vedra Beach, FL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+52,The Camargo Club,"Cincinnati, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+53,Kinloch – USA,"Manakin Sabot, VA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+54,Interlachen,"Edina, MN",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+55,Whispering Pines,"Trinity, TX",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+56,Old Sandwich,"Plymouth, MA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+57,Scioto,"Columbus, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+58,Oak Tree National,"Edmond, OK",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+59,Dallas National,"Dallas, TX",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+60,Pete Dye GC,"Bridgeport, WV",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+61,Baltusrol – Upper,"Springfield, NJ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+62,Winged Foot – East,"Mamaroneck, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+63,Canyata Golf Club,"Marshall, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+64,Somerset Hills,"Bernardsville, NJ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+65,Monterey Peninsula CC – Shore,"Pebble Beach, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+66,Shoreacres,"Lake Bluff, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+67,Kittansett Club,"Marion, MA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+68,Arcadia Bluffs,"Arcadia, MI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+69,Spring Hill Golf Club,"Orono, MN",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+70,Bandon Trails,"Bandon, OR",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+71,Milwaukee CC,"River Hills, WI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+72,Maidstone,"East Hampton, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+73,Cherry Hills,"Englewood, CO",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+74,The Estancia Club,"Scottsdale, AZ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+75,Congressional – Blue,"Bethesda, MD",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+76,Quaker Ridge,"Scarsdale, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+77,Plainfield,"Edison, NJ",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+78,Aronimink,"Newtown Square, PA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+79,Olympia Fields – North,"Olympia Fields, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+80,The Valley Club,"Aurora, CO",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+81,Valhalla,"Louisville, KY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+82,Boston GC,"Hingham, MA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+83,Quarry at La Quinta,"La Quinta, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+84,Club at Black Rock,"Coeur d'Alene, ID",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+85,Hudson National,"Croton On Hudson, NY",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+86,Double Eagle,"Galena, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+87,Yeamans Hall,"Hanahan, SC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+88,Rich Harvest Links,"Sugar Grove, IL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+89,Inverness,"Toledo, OH",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+90,Diamond Creek,"Banner Elk, NC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+91,Essex County Club,"Manchester, MA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+92,Blackwolf Run – River,"Kohler, WI",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+93,The Preserve,"Vancleave, MS",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+94,Crooked Stick,"Carmel, IN",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+95,Laurel Valley,"Ligonier, PA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+96,Calusa Pines,"Naples, FL",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+97,Flint Hills National,"Andover, KS",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+98,Sahalee – South/North,"Redmond, WA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+99,Mayacama Golf Club,"Santa Rosa, CA",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+100,Eagle Point,"Wilmington, NC",2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
+1,Pine Valley,"Pine Valley, NJ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+2,Augusta National,"Augusta, GA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+3,Cypress Point,"Pebble Beach, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+4,Shinnecock Hills,"Southampton, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+5,Oakmont,"Oakmont, PA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+6,Merion Golf Club,"Ardmore, PA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+7,Pebble Beach,"Pebble Beach, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+8,National Golf Links of America,"Southampton, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+9,Sand Hills,"Mullen, NE",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+10,Fishers Island,"Fishers Island, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+11,Winged Foot – West,"Mamaroneck, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+12,Seminole,"Juno Beach, FL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+13,Crystal Downs,"Frankfort, MI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+14,Chicago GC,"Wheaton, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+15,Friar's Head,"Riverhead, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+16,Muirfield Village,"Dublin, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+17,Pacific Dunes,"Bandon, OR",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+18,Country Club – Brookline,"Pepper Pike, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+19,LA Country Club – North,"Beavercreek, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+20,Oakland Hills – South,"Bloomfield Hills, MI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+21,Whistling Straits – Straits,"Sheboygan, WI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+22,Oak Hill – East,"Rochester, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+23,Riviera CC,"Pacific Palisades, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+24,Kiawah Island – Ocean,"Kiawah Island, SC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+25,Wade Hampton,"Cashiers, NC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+26,Shadow Creek,"North Las Vegas, NV",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+27,Prairie Dunes,"Hutchinson, KS",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+28,The Honors,"Ooltewah, TN",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+29,Pinehurst – No 2,"Pinehurst, NC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+30,Peachtree,"Atlanta, GA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+31,The Alotian,"Roland, AR",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+32,Gozzer Ranch,"Harrison, ID",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+33,The Olympic Club,"San Francisco, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+34,Southern Hills,"Tulsa, OK",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+35,San Francisco GC,"San Francisco, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+36,Bandon Dunes,"Bandon, OR",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+37,Bethpage Black,"Farmingdale, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+38,The Golf Club,"New Albany, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+39,Sebonack,"Southampton, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+40,Pikewood National,"Morgantown, WV",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+41,Baltusrol – Lower,"Springfield, NJ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+42,Erin Hills,"Hartford, WI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+43,Victoria National,"Newburgh, IN",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+44,The Camargo Club,"Cincinnati, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+45,Spyglass Hill,"Pebble Beach, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+46,Ballyneal,"Holyoke, CO",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+47,Butler National,"Oak Brook, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+48,Castle Pines,"Castle Rock, CO",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+49,TPC Sawgrass – Stadium,"Ponte Vedra Beach, FL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+50,Old Macdonald,"Bandon, OR",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+51,Garden City,"Garden City, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+52,Winged Foot – East,"Mamaroneck, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+53,Medinah – No 3,"Medinah, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+54,Whispering Pines,"Trinity, TX",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+55,Shoreacres,"Lake Bluff, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+56,Monterey Peninsula CC – Shore,"Pebble Beach, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+57,Scioto,"Columbus, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+58,Interlachen,"Edina, MN",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+59,Old Sandwich,"Plymouth, MA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+60,Oak Tree National,"Edmond, OK",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+61,Baltusrol – Upper,"Springfield, NJ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+62,Canyata Golf Club,"Marshall, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+63,Somerset Hills,"Bernardsville, NJ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+64,Pete Dye GC,"Bridgeport, WV",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+65,Dallas National,"Dallas, TX",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+66,Kinloch – USA,"Manakin Sabot, VA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+67,Maidstone,"East Hampton, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+68,Arcadia Bluffs,"Arcadia, MI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+69,Bandon Trails,"Bandon, OR",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+70,The Estancia Club,"Scottsdale, AZ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+71,Quaker Ridge,"Scarsdale, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+72,Cherry Hills,"Englewood, CO",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+73,Essex County Club,"Manchester, MA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+74,Milwaukee CC,"River Hills, WI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+75,Olympia Fields – North,"Olympia Fields, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+76,Myopia Hunt Club,"South Hamilton, MA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+77,Quarry at La Quinta,"La Quinta, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+78,Kittansett Club,"Marion, MA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+79,Monterey Peninsula CC – Dunes,"Pebble Beach, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+80,Congressional – Blue,"Bethesda, MD",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+81,Hudson National,"Croton On Hudson, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+82,Plainfield,"Edison, NJ",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+83,Calusa Pines,"Naples, FL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+84,Valhalla,"Louisville, KY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+85,Aronimink,"Newtown Square, PA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+86,The Valley Club,"Aurora, CO",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+87,Boston GC,"Hingham, MA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+88,Inverness,"Toledo, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+89,Sleepy Hollow,"Scarborough, NY",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+90,Diamond Creek,"Banner Elk, NC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+91,Club at Black Rock,"Coeur d'Alene, ID",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+92,Double Eagle,"Galena, OH",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+93,Spring Hill Golf Club,"Orono, MN",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+94,Rich Harvest Links,"Sugar Grove, IL",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+95,Yeamans Hall,"Hanahan, SC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+96,The Preserve,"Vancleave, MS",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+97,Blackwolf Run – River,"Kohler, WI",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+98,Old Town Club,"Winston Salem, NC",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+99,Crooked Stick,"Carmel, IN",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+100,Mayacama Golf Club,"Santa Rosa, CA",2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
+1,Pine Valley,"Pine Valley, NJ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+2,Augusta National,"Augusta, GA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+3,Cypress Point,"Pebble Beach, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+4,Shinnecock Hills,"Southampton, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+5,Oakmont,"Oakmont, PA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+6,Merion Golf Club,"Ardmore, PA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+7,National Golf Links of America,"Southampton, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+8,Pebble Beach,"Pebble Beach, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+9,Fishers Island,"Fishers Island, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+10,Sand Hills,"Mullen, NE",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+11,Seminole,"Juno Beach, FL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+12,Winged Foot – West,"Mamaroneck, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+13,Chicago GC,"Wheaton, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+14,Crystal Downs,"Frankfort, MI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+15,Muirfield Village,"Dublin, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+16,Friar's Head,"Riverhead, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+17,Country Club – Brookline,"Pepper Pike, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+18,Pacific Dunes,"Bandon, OR",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+19,LA Country Club – North,"Beavercreek, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+20,Oak Hill – East,"Rochester, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+21,Oakland Hills – South,"Bloomfield Hills, MI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+22,Riviera CC,"Pacific Palisades, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+23,Whistling Straits – Straits,"Sheboygan, WI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+24,Kiawah Island – Ocean,"Kiawah Island, SC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+25,Prairie Dunes,"Hutchinson, KS",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+26,Wade Hampton,"Cashiers, NC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+27,Shadow Creek,"North Las Vegas, NV",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+28,The Honors,"Ooltewah, TN",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+29,Pinehurst – No 2,"Pinehurst, NC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+30,Peachtree,"Atlanta, GA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+31,Gozzer Ranch,"Harrison, ID",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+32,Southern Hills,"Tulsa, OK",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+33,Pikewood National,"Morgantown, WV",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+34,The Olympic Club,"San Francisco, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+35,The Alotian,"Roland, AR",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+36,San Francisco GC,"San Francisco, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+37,Bandon Dunes,"Bandon, OR",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+38,Sebonack,"Southampton, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+39,Congaree,"Ridgeland, SC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+40,Bethpage Black,"Farmingdale, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+41,Winged Foot – East,"Mamaroneck, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+42,The Camargo Club,"Cincinnati, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+43,The Golf Club,"New Albany, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+44,Ballyneal,"Holyoke, CO",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+45,Baltusrol – Lower,"Springfield, NJ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+46,Erin Hills,"Hartford, WI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+47,Victoria National,"Newburgh, IN",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+48,Castle Pines,"Castle Rock, CO",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+49,Butler National,"Oak Brook, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+50,Somerset Hills,"Bernardsville, NJ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+51,Spyglass Hill,"Pebble Beach, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+52,TPC Sawgrass – Stadium,"Ponte Vedra Beach, FL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+53,Monterey Peninsula CC – Shore,"Pebble Beach, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+54,Shoreacres,"Lake Bluff, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+55,Whispering Pines,"Trinity, TX",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+56,Old Macdonald,"Bandon, OR",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+57,Oak Tree National,"Edmond, OK",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+58,Old Sandwich,"Plymouth, MA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+59,Interlachen,"Edina, MN",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+60,Medinah – No 3,"Medinah, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+61,Garden City,"Garden City, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+62,Sleepy Hollow,"Scarborough, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+63,Baltusrol – Upper,"Springfield, NJ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+64,Maidstone,"East Hampton, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+65,Inverness,"Toledo, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+66,Kinloch – USA,"Manakin Sabot, VA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+67,Bandon Trails,"Bandon, OR",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+68,Scioto,"Columbus, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+69,Myopia Hunt Club,"South Hamilton, MA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+70,Milwaukee CC,"River Hills, WI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+71,Dallas National,"Dallas, TX",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+72,The Estancia Club,"Scottsdale, AZ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+73,Cherry Hills,"Englewood, CO",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+74,Calusa Pines,"Naples, FL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+75,Plainfield,"Edison, NJ",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+76,Quaker Ridge,"Scarsdale, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+77,Kittansett Club,"Marion, MA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+78,The Valley Club,"Aurora, CO",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+79,Essex County Club,"Manchester, MA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+80,Monterey Peninsula CC – Dunes,"Pebble Beach, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+81,Rock Creek Cattle Co,"Deer Lodge, MT",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+82,Canyata Golf Club,"Marshall, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+83,Arcadia Bluffs,"Arcadia, MI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+84,Boston GC,"Hingham, MA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+85,Quarry at La Quinta,"La Quinta, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+86,Diamond Creek,"Banner Elk, NC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+87,Pete Dye GC,"Bridgeport, WV",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+88,Olympia Fields – North,"Olympia Fields, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+89,Hudson National,"Croton On Hudson, NY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+90,Rich Harvest Links,"Sugar Grove, IL",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+91,Congressional – Blue,"Bethesda, MD",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+92,Old Town Club,"Winston Salem, NC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+93,Valhalla,"Louisville, KY",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+94,Aronimink,"Newtown Square, PA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+95,Blackwolf Run – River,"Kohler, WI",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+96,Double Eagle,"Galena, OH",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+97,Quail Hollow,"Charlotte, NC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+98,Pasatiempo,"Santa Cruz, CA",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+99,Yeamans Hall,"Hanahan, SC",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+100,Spring Hill Golf Club,"Orono, MN",2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
+1,Pine Valley,"Pine Valley, NJ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+2,Augusta National,"Augusta, GA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+3,Cypress Point,"Pebble Beach, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+4,Shinnecock Hills,"Southampton, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+5,Oakmont,"Oakmont, PA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+6,Merion Golf Club,"Ardmore, PA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+7,National Golf Links of America,"Southampton, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+8,Sand Hills,"Mullen, NE",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+9,Fishers Island,"Fishers Island, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+10,Seminole,"Juno Beach, FL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+11,Winged Foot – West,"Mamaroneck, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+12,Pebble Beach,"Pebble Beach, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+13,Chicago GC,"Wheaton, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+14,Crystal Downs,"Frankfort, MI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+15,Friar's Head,"Riverhead, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+16,LA Country Club – North,"Beavercreek, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+17,Muirfield Village,"Dublin, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+18,Riviera CC,"Pacific Palisades, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+19,Country Club – Brookline,"Pepper Pike, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+20,Oakland Hills – South,"Bloomfield Hills, MI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+21,Pacific Dunes,"Bandon, OR",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+22,Oak Hill – East,"Rochester, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+23,Prairie Club – Dunes,"Valentine, NE",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+24,Kiawah Island – Ocean,"Kiawah Island, SC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+25,Peachtree,"Atlanta, GA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+26,Whistling Straits – Straits,"Sheboygan, WI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+27,Shadow Creek,"North Las Vegas, NV",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+28,Southern Hills,"Tulsa, OK",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+29,Pinehurst – No 2,"Pinehurst, NC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+30,Pikewood National,"Morgantown, WV",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+31,The Honors,"Ooltewah, TN",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+32,Wade Hampton,"Cashiers, NC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+33,San Francisco GC,"San Francisco, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+34,Ohoopee Match Club,"Cobbtown, GA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+35,The Olympic Club,"San Francisco, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+36,Ballyneal,"Holyoke, CO",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+37,Gozzer Ranch,"Harrison, ID",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+38,The Alotian,"Roland, AR",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+39,Bethpage Black,"Farmingdale, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+40,Bandon Dunes,"Bandon, OR",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+41,TPC Sawgrass – Stadium,"Ponte Vedra Beach, FL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+42,Congaree,"Ridgeland, SC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+43,Sebonack,"Southampton, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+44,The Golf Club,"New Albany, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+45,Baltusrol – Lower,"Springfield, NJ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+46,Castle Pines,"Castle Rock, CO",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+47,The Camargo Club,"Cincinnati, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+48,Erin Hills,"Hartford, WI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+49,Nanea,"Kailua Kona, HI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+50,Myopia Hunt Club,"South Hamilton, MA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+51,Whispering Pines,"Trinity, TX",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+52,Maidstone,"East Hampton, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+53,Victoria National,"Newburgh, IN",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+54,Old Town Club,"Winston Salem, NC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+55,Shoreacres,"Lake Bluff, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+56,Rock Creek Cattle Co,"Deer Lodge, MT",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+57,Somerset Hills,"Bernardsville, NJ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+58,Inverness,"Toledo, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+59,Sleepy Hollow,"Scarborough, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+60,Scioto,"Columbus, OH",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+61,Winged Foot – East,"Mamaroneck, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+62,Monterey Peninsula CC – Shore,"Pebble Beach, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+63,Old Sandwich,"Plymouth, MA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+64,Garden City,"Garden City, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+65,Bandon Trails,"Bandon, OR",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+66,Oak Tree National,"Edmond, OK",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+67,Spyglass Hill,"Pebble Beach, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+68,Cherry Hills,"Englewood, CO",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+69,Calusa Pines,"Naples, FL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+70,The Estancia Club,"Scottsdale, AZ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+71,The California Golf Club,"South San Francisco, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+72,Old Macdonald,"Bandon, OR",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+73,Congressional – Blue,"Bethesda, MD",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+74,Kinloch – USA,"Manakin Sabot, VA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+75,Butler National,"Oak Brook, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+76,The Valley Club,"Aurora, CO",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+77,Diamond Creek,"Banner Elk, NC",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+78,Essex County Club,"Manchester, MA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+79,Monterey Peninsula CC – Dunes,"Pebble Beach, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+80,Baltusrol – Upper,"Springfield, NJ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+81,Quaker Ridge,"Scarsdale, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+82,Plainfield,"Edison, NJ",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+83,Dallas National,"Dallas, TX",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+84,Interlachen,"Edina, MN",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+85,Canyata Golf Club,"Marshall, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+86,Milwaukee CC,"River Hills, WI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+87,Valhalla,"Louisville, KY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+88,Hudson National,"Croton On Hudson, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+89,Kittansett Club,"Marion, MA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+90,Boston GC,"Hingham, MA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+91,Quarry at La Quinta,"La Quinta, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+92,Arcadia Bluffs,"Arcadia, MI",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+93,Medinah – No 3,"Medinah, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+94,Pete Dye GC,"Bridgeport, WV",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+95,Aronimink,"Newtown Square, PA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+96,Pasatiempo,"Santa Cruz, CA",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+97,Piping Rock,"Locust Valley, NY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+98,Shooting Star,"Teton Village, WY",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+99,Olympia Fields – North,"Olympia Fields, IL",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
+100,Spring Hill Golf Club,"Orono, MN",2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
 1,Pine Valley Golf Club,"Pine Valley, NJ",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
 2,Augusta National Golf Club,"Augusta, GA",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
 3,Cypress Point Club,"Pebble Beach, CA",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
@@ -99,503 +599,3 @@ rank,course_name,location,edition,source_url
 98,Piping Rock Club,"Locust Valley, NY",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
 99,Crooked Stick Golf Club,"Carmel, IN",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
 100,Aronimink Golf Club,"Newtown Square, PA",2025-26,https://www.golfdigest.com/story/americas-100-greatest-golf-courses-ranking
-1,Augusta National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-2,Pine Valley,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-3,Cypress Point,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-4,Shinnecock Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-5,Merion Golf Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-6,Oakmont,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-7,Pebble Beach,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-8,National Golf Links of America,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-9,Winged Foot – West,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-10,Fishers Island,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-11,Sand Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-12,Seminole,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-13,Crystal Downs,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-14,Chicago GC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-15,Muirfield Village,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-16,Oak Hill – East,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-17,Oakland Hills – South,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-18,Pacific Dunes,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-19,Country Club – Brookline,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-20,Kiawah Island – Ocean,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-21,Wade Hampton,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-22,Whistling Straits – Straits,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-23,Friar's Head,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-24,Riviera CC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-25,Prairie Dunes,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-26,LA Country Club – North,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-27,The Alotian,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-28,Pinehurst – No 2,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-29,Southern Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-30,Gozzer Ranch,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-31,The Honors,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-32,Shadow Creek,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-33,Peachtree,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-34,San Francisco GC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-35,The Olympic Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-36,The Golf Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-37,Bandon Dunes,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-38,Sebonack,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-39,Medinah – No 3,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-40,Castle Pines,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-41,Baltusrol – Lower,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-42,Erin Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-43,Bethpage Black,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-44,Pikewood National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-45,Victoria National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-46,Butler National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-47,TPC Sawgrass – Stadium,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-48,Spyglass Hill,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-49,Garden City,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-50,Scioto,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-51,Oak Tree National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-52,The Camargo Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-53,Pete Dye GC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-54,Ballyneal,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-55,Old Macdonald,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-56,Kinloch – USA,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-57,Interlachen,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-58,Baltusrol – Upper,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-59,Winged Foot – East,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-60,Canyata Golf Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-61,Dallas National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-62,Milwaukee CC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-63,Club at Black Rock,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-64,Yeamans Hall,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-65,Arcadia Bluffs,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-66,Olympia Fields – North,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-67,Monterey Peninsula CC – Shore,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-68,Whispering Pines,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-69,Inverness,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-70,The Estancia Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-71,Quaker Ridge,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-72,Plainfield,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-73,Somerset Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-74,Bandon Trails,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-75,Boston GC,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-76,Double Eagle,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-77,Quarry at La Quinta,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-78,Mountaintop,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-79,Old Sandwich,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-80,Cherry Hills,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-81,Rich Harvest Links,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-82,Congressional – Blue,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-83,The Valley Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-84,Kittansett Club,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-85,Flint Hills National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-86,Hazeltine National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-87,The Preserve,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-88,Calusa Pines,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-89,Eagle Point,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-90,Aronimink,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-91,Blackwolf Run – River,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-92,Laurel Valley,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-93,Crooked Stick,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-94,Diamond Creek,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-95,Hudson National,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-96,French Lick – Pete Dye,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-97,Valhalla,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-98,Maidstone,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-99,Shoreacres,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-100,Streamsong – Red,,2015-16,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2015
-1,Pine Valley,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-2,Augusta National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-3,Cypress Point,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-4,Shinnecock Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-5,Oakmont,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-6,Merion Golf Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-7,Pebble Beach,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-8,National Golf Links of America,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-9,Sand Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-10,Winged Foot – West,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-11,Fishers Island,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-12,Crystal Downs,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-13,Seminole,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-14,Chicago GC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-15,Muirfield Village,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-16,Country Club – Brookline,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-17,Oakland Hills – South,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-18,Pacific Dunes,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-19,Friar's Head,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-20,Oak Hill – East,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-21,Kiawah Island – Ocean,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-22,Whistling Straits – Straits,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-23,LA Country Club – North,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-24,Riviera CC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-25,Wade Hampton,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-26,Shadow Creek,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-27,The Alotian,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-28,Gozzer Ranch,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-29,Prairie Dunes,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-30,Pinehurst – No 2,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-31,The Olympic Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-32,The Honors,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-33,Peachtree,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-34,The Golf Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-35,Southern Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-36,Bandon Dunes,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-37,San Francisco GC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-38,Bethpage Black,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-39,Baltusrol – Lower,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-40,Pikewood National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-41,Sebonack,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-42,Castle Pines,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-43,Victoria National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-44,Erin Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-45,Butler National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-46,Garden City,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-47,Old Macdonald,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-48,Medinah – No 3,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-49,Spyglass Hill,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-50,Ballyneal,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-51,TPC Sawgrass – Stadium,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-52,The Camargo Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-53,Kinloch – USA,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-54,Interlachen,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-55,Whispering Pines,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-56,Old Sandwich,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-57,Scioto,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-58,Oak Tree National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-59,Dallas National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-60,Pete Dye GC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-61,Baltusrol – Upper,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-62,Winged Foot – East,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-63,Canyata Golf Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-64,Somerset Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-65,Monterey Peninsula CC – Shore,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-66,Shoreacres,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-67,Kittansett Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-68,Arcadia Bluffs,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-69,Spring Hill Golf Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-70,Bandon Trails,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-71,Milwaukee CC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-72,Maidstone,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-73,Cherry Hills,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-74,The Estancia Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-75,Congressional – Blue,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-76,Quaker Ridge,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-77,Plainfield,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-78,Aronimink,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-79,Olympia Fields – North,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-80,The Valley Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-81,Valhalla,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-82,Boston GC,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-83,Quarry at La Quinta,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-84,Club at Black Rock,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-85,Hudson National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-86,Double Eagle,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-87,Yeamans Hall,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-88,Rich Harvest Links,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-89,Inverness,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-90,Diamond Creek,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-91,Essex County Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-92,Blackwolf Run – River,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-93,The Preserve,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-94,Crooked Stick,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-95,Laurel Valley,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-96,Calusa Pines,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-97,Flint Hills National,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-98,Sahalee – South/North,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-99,Mayacama Golf Club,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-100,Eagle Point,,2017-18,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2017
-1,Pine Valley,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-2,Augusta National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-3,Cypress Point,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-4,Shinnecock Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-5,Oakmont,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-6,Merion Golf Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-7,Pebble Beach,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-8,National Golf Links of America,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-9,Sand Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-10,Fishers Island,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-11,Winged Foot – West,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-12,Seminole,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-13,Crystal Downs,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-14,Chicago GC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-15,Friar's Head,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-16,Muirfield Village,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-17,Pacific Dunes,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-18,Country Club – Brookline,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-19,LA Country Club – North,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-20,Oakland Hills – South,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-21,Whistling Straits – Straits,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-22,Oak Hill – East,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-23,Riviera CC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-24,Kiawah Island – Ocean,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-25,Wade Hampton,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-26,Shadow Creek,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-27,Prairie Dunes,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-28,The Honors,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-29,Pinehurst – No 2,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-30,Peachtree,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-31,The Alotian,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-32,Gozzer Ranch,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-33,The Olympic Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-34,Southern Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-35,San Francisco GC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-36,Bandon Dunes,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-37,Bethpage Black,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-38,The Golf Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-39,Sebonack,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-40,Pikewood National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-41,Baltusrol – Lower,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-42,Erin Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-43,Victoria National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-44,The Camargo Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-45,Spyglass Hill,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-46,Ballyneal,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-47,Butler National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-48,Castle Pines,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-49,TPC Sawgrass – Stadium,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-50,Old Macdonald,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-51,Garden City,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-52,Winged Foot – East,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-53,Medinah – No 3,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-54,Whispering Pines,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-55,Shoreacres,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-56,Monterey Peninsula CC – Shore,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-57,Scioto,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-58,Interlachen,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-59,Old Sandwich,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-60,Oak Tree National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-61,Baltusrol – Upper,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-62,Canyata Golf Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-63,Somerset Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-64,Pete Dye GC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-65,Dallas National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-66,Kinloch – USA,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-67,Maidstone,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-68,Arcadia Bluffs,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-69,Bandon Trails,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-70,The Estancia Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-71,Quaker Ridge,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-72,Cherry Hills,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-73,Essex County Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-74,Milwaukee CC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-75,Olympia Fields – North,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-76,Myopia Hunt Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-77,Quarry at La Quinta,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-78,Kittansett Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-79,Monterey Peninsula CC – Dunes,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-80,Congressional – Blue,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-81,Hudson National,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-82,Plainfield,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-83,Calusa Pines,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-84,Valhalla,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-85,Aronimink,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-86,The Valley Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-87,Boston GC,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-88,Inverness,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-89,Sleepy Hollow,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-90,Diamond Creek,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-91,Club at Black Rock,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-92,Double Eagle,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-93,Spring Hill Golf Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-94,Rich Harvest Links,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-95,Yeamans Hall,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-96,The Preserve,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-97,Blackwolf Run – River,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-98,Old Town Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-99,Crooked Stick,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-100,Mayacama Golf Club,,2019-20,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2019
-1,Pine Valley,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-2,Augusta National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-3,Cypress Point,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-4,Shinnecock Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-5,Oakmont,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-6,Merion Golf Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-7,National Golf Links of America,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-8,Pebble Beach,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-9,Fishers Island,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-10,Sand Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-11,Seminole,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-12,Winged Foot – West,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-13,Chicago GC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-14,Crystal Downs,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-15,Muirfield Village,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-16,Friar's Head,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-17,Country Club – Brookline,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-18,Pacific Dunes,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-19,LA Country Club – North,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-20,Oak Hill – East,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-21,Oakland Hills – South,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-22,Riviera CC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-23,Whistling Straits – Straits,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-24,Kiawah Island – Ocean,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-25,Prairie Dunes,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-26,Wade Hampton,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-27,Shadow Creek,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-28,The Honors,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-29,Pinehurst – No 2,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-30,Peachtree,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-31,Gozzer Ranch,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-32,Southern Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-33,Pikewood National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-34,The Olympic Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-35,The Alotian,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-36,San Francisco GC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-37,Bandon Dunes,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-38,Sebonack,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-39,Congaree,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-40,Bethpage Black,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-41,Winged Foot – East,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-42,The Camargo Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-43,The Golf Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-44,Ballyneal,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-45,Baltusrol – Lower,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-46,Erin Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-47,Victoria National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-48,Castle Pines,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-49,Butler National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-50,Somerset Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-51,Spyglass Hill,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-52,TPC Sawgrass – Stadium,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-53,Monterey Peninsula CC – Shore,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-54,Shoreacres,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-55,Whispering Pines,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-56,Old Macdonald,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-57,Oak Tree National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-58,Old Sandwich,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-59,Interlachen,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-60,Medinah – No 3,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-61,Garden City,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-62,Sleepy Hollow,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-63,Baltusrol – Upper,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-64,Maidstone,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-65,Inverness,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-66,Kinloch – USA,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-67,Bandon Trails,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-68,Scioto,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-69,Myopia Hunt Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-70,Milwaukee CC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-71,Dallas National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-72,The Estancia Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-73,Cherry Hills,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-74,Calusa Pines,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-75,Plainfield,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-76,Quaker Ridge,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-77,Kittansett Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-78,The Valley Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-79,Essex County Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-80,Monterey Peninsula CC – Dunes,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-81,Rock Creek Cattle Co,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-82,Canyata Golf Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-83,Arcadia Bluffs,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-84,Boston GC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-85,Quarry at La Quinta,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-86,Diamond Creek,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-87,Pete Dye GC,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-88,Olympia Fields – North,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-89,Hudson National,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-90,Rich Harvest Links,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-91,Congressional – Blue,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-92,Old Town Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-93,Valhalla,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-94,Aronimink,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-95,Blackwolf Run – River,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-96,Double Eagle,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-97,Quail Hollow,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-98,Pasatiempo,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-99,Yeamans Hall,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-100,Spring Hill Golf Club,,2021-22,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2021
-1,Pine Valley,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-2,Augusta National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-3,Cypress Point,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-4,Shinnecock Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-5,Oakmont,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-6,Merion Golf Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-7,National Golf Links of America,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-8,Sand Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-9,Fishers Island,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-10,Seminole,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-11,Winged Foot – West,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-12,Pebble Beach,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-13,Chicago GC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-14,Crystal Downs,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-15,Friar's Head,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-16,LA Country Club – North,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-17,Muirfield Village,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-18,Riviera CC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-19,Country Club – Brookline,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-20,Oakland Hills – South,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-21,Pacific Dunes,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-22,Oak Hill – East,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-23,Prairie Club – Dunes,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-24,Kiawah Island – Ocean,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-25,Peachtree,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-26,Whistling Straits – Straits,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-27,Shadow Creek,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-28,Southern Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-29,Pinehurst – No 2,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-30,Pikewood National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-31,The Honors,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-32,Wade Hampton,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-33,San Francisco GC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-34,Ohoopee Match Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-35,The Olympic Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-36,Ballyneal,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-37,Gozzer Ranch,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-38,The Alotian,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-39,Bethpage Black,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-40,Bandon Dunes,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-41,TPC Sawgrass – Stadium,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-42,Congaree,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-43,Sebonack,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-44,The Golf Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-45,Baltusrol – Lower,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-46,Castle Pines,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-47,The Camargo Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-48,Erin Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-49,Nanea,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-50,Myopia Hunt Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-51,Whispering Pines,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-52,Maidstone,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-53,Victoria National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-54,Old Town Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-55,Shoreacres,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-56,Rock Creek Cattle Co,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-57,Somerset Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-58,Inverness,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-59,Sleepy Hollow,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-60,Scioto,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-61,Winged Foot – East,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-62,Monterey Peninsula CC – Shore,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-63,Old Sandwich,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-64,Garden City,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-65,Bandon Trails,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-66,Oak Tree National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-67,Spyglass Hill,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-68,Cherry Hills,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-69,Calusa Pines,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-70,The Estancia Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-71,The California Golf Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-72,Old Macdonald,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-73,Congressional – Blue,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-74,Kinloch – USA,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-75,Butler National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-76,The Valley Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-77,Diamond Creek,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-78,Essex County Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-79,Monterey Peninsula CC – Dunes,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-80,Baltusrol – Upper,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-81,Quaker Ridge,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-82,Plainfield,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-83,Dallas National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-84,Interlachen,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-85,Canyata Golf Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-86,Milwaukee CC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-87,Valhalla,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-88,Hudson National,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-89,Kittansett Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-90,Boston GC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-91,Quarry at La Quinta,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-92,Arcadia Bluffs,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-93,Medinah – No 3,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-94,Pete Dye GC,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-95,Aronimink,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-96,Pasatiempo,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-97,Piping Rock,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-98,Shooting Star,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-99,Olympia Fields – North,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
-100,Spring Hill Golf Club,,2023-24,https://www.planetgolf.com/rankings/usa/golf-digest-usa-top-100/2023
