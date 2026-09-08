@@ -348,12 +348,93 @@ body.chrome-hidden .chrome-toggle {
   body:not(.chrome-hidden) .chrome-toggle { bottom: 18px; top: auto; left: auto; right: 12px; width: auto; padding: 12px 14px; }
 }
 
+
+/* ---- Compact panel redesign ---- */
+.top-left { top:12px; left:12px; max-width:min(360px, calc(100vw - 24px)); gap:0; }
+.top-right { top:12px; right:12px; }
+.bottom-left { bottom:16px; left:12px; }
+.bottom-right { bottom:16px; right:12px; max-width:200px; }
+.card { padding: 12px 14px; border-radius: 14px; }
+.card.panel { display:flex; flex-direction:column; gap:10px; }
+.brand-row { display:flex; flex-direction:column; gap:8px; }
+.brand h1 { font-size:22px; }
+.brand p { margin:4px 0 0; font-size:11px; }
+.brand a { color: var(--gold); text-decoration:none; }
+.brand a:hover { text-decoration:underline; }
+.stat-row { display:flex; gap:10px; flex-wrap:wrap; padding-top:2px; border-top:1px solid rgba(246,241,228,0.08); }
+.stat { min-width:48px; }
+.stat b { font-size:15px; }
+.stat span { font-size:9px; }
+.filters {
+  display:grid;
+  grid-template-columns: 1.6fr 0.7fr 0.85fr 0.55fr;
+  gap:6px;
+}
+.filters label { gap:3px; font-size:9px; }
+.filters label.grow { grid-column: 1 / -1; }
+.filters input, .filters select {
+  padding: 7px 9px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.chips { display:flex; flex-wrap:wrap; gap:5px; }
+.chip { padding: 5px 9px; font-size: 11px; }
+.regions {
+  border: 1px solid rgba(246,241,228,0.10);
+  border-radius: 10px;
+  padding: 0;
+  background: rgba(255,255,255,0.02);
+}
+.regions > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  font-size: 11px;
+  color: var(--muted);
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  user-select:none;
+}
+.regions > summary::-webkit-details-marker { display:none; }
+.regions > summary::after { content:"▸"; color:var(--gold); font-size:10px; }
+.regions[open] > summary::after { content:"▾"; }
+.regions .chips { padding: 0 8px 8px; }
+.muted-hint { color: rgba(246,241,228,0.38); font-size:10px; }
+.chip-hint { margin:0; font-size:10px; color:var(--muted); line-height:1.35; }
+.legend { padding: 8px 10px; }
+.legend .title { display:none; }
+.legend-inline { display:flex; flex-wrap:wrap; gap:8px 10px; align-items:center; }
+.legend-row { display:inline-flex; align-items:center; gap:5px; font-size:10px; color:var(--muted); }
+.legend .dot { width:8px; height:8px; }
+.footnote { font-size:10px; line-height:1.35; opacity:0.85; max-width:180px; }
+.basemap { padding:3px; gap:4px; }
+.basemap button { padding:6px 10px; font-size:11px; }
+.chrome-toggle {
+  top: 12px; left: auto; right: 12px; transform: none;
+  padding: 8px 12px; font-size: 12px;
+  /* sit under basemap on desktop */
+  margin-top: 44px;
+}
+body.chrome-hidden .chrome-toggle { margin-top: 0; right: 12px; left: auto; transform: none; }
+.table-panel { width: min(420px, calc(100vw - 24px)); }
+.table-panel .th { padding: 10px 12px; }
+.table-panel .th h2 { font-size: 16px; }
+.table-panel table { font-size: 12px; }
+.table-panel tbody td { padding: 8px 8px; }
+@media (max-width: 820px) {
+  .chrome-toggle { margin-top: 0; top: auto; bottom: 18px; left: auto; right: 12px; width: auto; }
+  body:not(.chrome-hidden) .chrome-toggle { bottom: 18px; top: auto; left: auto; right: 12px; }
+  .ui.top-left { top: 64px; left: 12px; right: 12px; max-width: none; }
+  .filters { grid-template-columns: 1fr 1fr; }
+  .filters label.grow { grid-column: 1 / -1; }
+  .brand h1 { font-size: 20px; }
+  .legend-inline { gap: 6px 8px; }
+}
+
 </style>
 </head>
 <body>
 <div id="map"></div>
 <button type="button" class="chrome-toggle" id="chromeToggle" title="Hide filters and table">Hide panels</button>
-
 
 <div class="mobile-bar" id="mobileBar">
   <button type="button" class="mbtn" id="mobileFiltersBtn">Filters</button>
@@ -363,20 +444,19 @@ body.chrome-hidden .chrome-toggle {
 <div class="vignette"></div>
 
 <div class="ui top-left">
-  <div class="card brand">
-    <h1>American <span>Golf</span> Atlas</h1>
-    <p>State leaderboards × national Top 100 cross-ref · free OSM / imagery · no API keys</p>
-    <p style="margin:8px 0 0;font-size:12.5px"><a href="history.html" style="color:var(--gold)">Top 100 history</a></p>
-  </div>
-  <div class="card">
-    <div class="stat-row" id="stats"></div>
-  </div>
-  <div class="card">
+  <div class="card panel">
+    <div class="brand-row">
+      <div class="brand">
+        <h1>American <span>Golf</span> Atlas</h1>
+        <p><a href="history.html">Top 100 history</a> · free tiles · no API keys</p>
+      </div>
+      <div class="stat-row" id="stats"></div>
+    </div>
     <div class="filters">
-      <label>Search<input id="q" type="search" placeholder="Pebble, Shinnecock…"/></label>
+      <label class="grow">Search<input id="q" type="search" placeholder="Pebble, Shinnecock…" autocomplete="off"/></label>
       <label>State<select id="state"><option value="">All</option></select></label>
       <label>Access<select id="access"><option value="">All</option></select></label>
-      <label>Min lists<select id="minLists">
+      <label>Lists<select id="minLists">
         <option value="0">Any</option>
         <option value="1">≥1</option>
         <option value="2">≥2</option>
@@ -384,33 +464,35 @@ body.chrome-hidden .chrome-toggle {
         <option value="4">≥4</option>
       </select></label>
     </div>
-        <div class="chips" id="listChips">
-      <button class="chip star active" data-filter="top100">★ Top 100 USA</button>
-      <button class="chip" data-list="GDBIS">Best in State</button>
-      <button class="chip" data-list="GD100">GD 100</button>
-      <button class="chip" data-list="GOLF100">GOLF 100</button>
-      <button class="chip" data-list="GWPUBLIC">GW Public</button>
-      <button class="chip" data-list="GWPRIVATE">GW Private</button>
+    <div class="chips" id="listChips">
+      <button class="chip star active" data-filter="top100" title="GD100 and/or GOLF100">★ Top 100</button>
+      <button class="chip" data-list="GDBIS" title="Best in State = #1 per state">BIS #1</button>
+      <button class="chip" data-list="GD100" title="Golf Digest 100">GD 100</button>
+      <button class="chip" data-list="GOLF100" title="GOLF Magazine 100">GOLF 100</button>
+      <button class="chip" data-list="GWPUBLIC" title="Golfweek Public">GW Pub</button>
+      <button class="chip" data-list="GWPRIVATE" title="Golfweek Private">GW Priv</button>
     </div>
-    <div class="chips" id="regionalChips" style="margin-top:8px">
-      <button class="chip regional" data-regional="TX" data-depth="50">Texas Top 50</button>
-      <button class="chip regional" data-regional="FL" data-depth="50">Florida Top 50</button>
-      <button class="chip regional" data-regional="GA" data-depth="40">Georgia Top 40</button>
-      <button class="chip regional" data-regional="NC" data-depth="40">North Carolina Top 40</button>
-      <button class="chip regional" data-regional="SC" data-depth="40">South Carolina Top 40</button>
-      <button class="chip regional" data-regional="VA" data-depth="30">Virginia Top 30</button>
-      <button class="chip regional" data-regional="AL" data-depth="25">Alabama Top 25</button>
-      <button class="chip regional" data-regional="TN" data-depth="25">Tennessee Top 25</button>
-      <button class="chip regional" data-regional="OK" data-depth="20">Oklahoma Top 20</button>
-      <button class="chip regional" data-regional="LA" data-depth="20">Louisiana Top 20</button>
-      <button class="chip regional" data-regional="MS" data-depth="20">Mississippi Top 20</button>
-      <button class="chip regional" data-regional="AR" data-depth="20">Arkansas Top 20</button>
-      <button class="chip regional" data-regional="CO" data-depth="50">Colorado Top 50</button>
-    </div>
-    <div class="chip-hint" style="margin-top:8px;font-size:11px;color:var(--muted)">Best in State = #1 course per state. Other list chips use OR. ★ Top 100 clears when you pick a list or region.</div>
+    <details class="regions" id="regionsDetails">
+      <summary>Regions <span class="muted-hint">TX · FL · South · CO</span></summary>
+      <div class="chips" id="regionalChips">
+        <button class="chip regional" data-regional="TX" data-depth="50" title="Texas Top 50">TX 50</button>
+        <button class="chip regional" data-regional="FL" data-depth="50" title="Florida Top 50">FL 50</button>
+        <button class="chip regional" data-regional="GA" data-depth="40" title="Georgia Top 40">GA 40</button>
+        <button class="chip regional" data-regional="NC" data-depth="40" title="North Carolina Top 40">NC 40</button>
+        <button class="chip regional" data-regional="SC" data-depth="40" title="South Carolina Top 40">SC 40</button>
+        <button class="chip regional" data-regional="VA" data-depth="30" title="Virginia Top 30">VA 30</button>
+        <button class="chip regional" data-regional="AL" data-depth="25" title="Alabama Top 25">AL 25</button>
+        <button class="chip regional" data-regional="TN" data-depth="25" title="Tennessee Top 25">TN 25</button>
+        <button class="chip regional" data-regional="OK" data-depth="20" title="Oklahoma Top 20">OK 20</button>
+        <button class="chip regional" data-regional="LA" data-depth="20" title="Louisiana Top 20">LA 20</button>
+        <button class="chip regional" data-regional="MS" data-depth="20" title="Mississippi Top 20">MS 20</button>
+        <button class="chip regional" data-regional="AR" data-depth="20" title="Arkansas Top 20">AR 20</button>
+        <button class="chip regional" data-regional="CO" data-depth="50" title="Colorado Top 50">CO 50</button>
+      </div>
+    </details>
+    <div class="chip-hint">Lists OR · BIS = #1/state · ★ clears when you pick a list/region</div>
   </div>
 </div>
-
 
 <div class="table-panel" id="tablePanel" aria-hidden="true">
   <div class="th">
@@ -442,20 +524,21 @@ body.chrome-hidden .chrome-toggle {
 <div class="ui top-right">
   <div class="basemap" id="basemap">
     <button data-layer="imagery" class="active">Imagery</button>
-    <button data-layer="dark">Dark streets</button>
+    <button data-layer="dark">Dark</button>
     <button data-layer="light">Light</button>
   </div>
 </div>
 
 <div class="ui bottom-left">
   <div class="card legend">
-    <div class="title">Legend</div>
-    <div class="legend-row"><span class="star-ico">★</span> National Top 100 USA</div>
-    <div class="legend-row"><span class="dot" style="background:#94a3b8"></span> No list overlap</div>
-    <div class="legend-row"><span class="dot" style="background:#3d7a58"></span> 1 list</div>
-    <div class="legend-row"><span class="dot" style="background:#e6c36a"></span> 2 lists</div>
-    <div class="legend-row"><span class="dot" style="background:#d97706"></span> 3 lists</div>
-    <div class="legend-row"><span class="dot" style="background:#c45c4a"></span> 4–5 lists</div>
+    <div class="legend-inline">
+      <span class="legend-row"><span class="star-ico">★</span> Top 100</span>
+      <span class="legend-row"><span class="dot" style="background:#94a3b8"></span>0</span>
+      <span class="legend-row"><span class="dot" style="background:#3d7a58"></span>1</span>
+      <span class="legend-row"><span class="dot" style="background:#e6c36a"></span>2</span>
+      <span class="legend-row"><span class="dot" style="background:#d97706"></span>3</span>
+      <span class="legend-row"><span class="dot" style="background:#c45c4a"></span>4+</span>
+    </div>
   </div>
 </div>
 
@@ -649,16 +732,20 @@ let lastTableRows = [];
 let lastTableTitle = '';
 
 function activeListTitle() {
+  const label = (b) => (b.title && b.title.trim()) || b.textContent.trim();
   if (regionalFilters.length === 1) {
     const btn = document.querySelector(`#regionalChips .chip.regional.active[data-regional="${regionalFilters[0].code}"]`);
-    return btn ? btn.textContent.trim() : `${regionalFilters[0].code} Top ${regionalFilters[0].depth}`;
+    return btn ? label(btn) : `${regionalFilters[0].code} Top ${regionalFilters[0].depth}`;
   }
   if (regionalFilters.length > 1) {
-    return regionalFilters.map(r => `${r.code}≤${r.depth}`).join(' + ');
+    return regionalFilters.map(r => {
+      const btn = document.querySelector(`#regionalChips .chip.regional.active[data-regional="${r.code}"]`);
+      return btn ? label(btn) : `${r.code}≤${r.depth}`;
+    }).join(' + ');
   }
   const listBtns = [...document.querySelectorAll('#listChips .chip[data-list].active')];
   if (listBtns.length === 1 && listBtns[0].dataset.list === 'GDBIS') return 'Best in State — #1 per state';
-  if (listBtns.length) return listBtns.map(b => b.textContent.trim()).join(' + ');
+  if (listBtns.length) return listBtns.map(label).join(' + ');
   if (top100Only) return '★ Top 100 USA';
   return 'Filtered courses';
 }
@@ -864,6 +951,19 @@ function render() {
 }
 ['q','state','access','minLists'].forEach(id => document.getElementById(id).addEventListener('input', render));
 
+
+
+// Keep Regions open when a regional filter is active
+(function setupRegionsAutoOpen() {
+  const details = document.getElementById('regionsDetails');
+  if (!details) return;
+  const sync = () => {
+    const on = !!document.querySelector('#regionalChips .chip.active');
+    if (on) details.open = true;
+  };
+  document.getElementById('regionalChips')?.addEventListener('click', () => setTimeout(sync, 0));
+  sync();
+})();
 
 // Hide all filter/table chrome for a clean map
 (function setupChromeToggle() {
